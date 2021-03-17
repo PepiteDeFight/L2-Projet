@@ -1,13 +1,13 @@
 /**
  * @file        main.c
  * @brief       Contient l'implémentation de la fonction int main() ainsi que tous les appels de librairies dynamiques pour sdl
- * @author      Meunier Rodrigue
+ * @author      Meunier Rodrigue Nicolas Lemoult Mathis Morisseau
  * @version     1.0
  * @date        2021
  * @copyright   Le Mans Université
  */
 
-#include "include/struct.h"
+#include "../include/struct.h"
 
 /**
  * \fn int main(int argc, char* argv[])
@@ -28,7 +28,6 @@ int main(int argc, char* argv[])
     if(Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 1024) == -1)quitter(SDL_MIXER); //Initialisation de l'API Mixer
 
     /*------------------------------------------------------*/
-
     initialisation_parametres();
     //menu_parametre();
     accueil();
