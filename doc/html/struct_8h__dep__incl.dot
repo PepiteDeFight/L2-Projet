@@ -1,0 +1,46 @@
+digraph "/mnt/c/Users/Rod4401/Desktop/Project L2/include/struct.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/struct.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="C'est également un fichier père car struct.h contient toutes les déclarations des structures liées au..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/actions.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$actions_8h.html",tooltip="Contient les déclarations des fonctions d'actions des joueurs."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/actions.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$actions_8c.html",tooltip="Contient l'implementation des fonctions en rapport avec les deplacements des personnages."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/defs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$defs_8h.html",tooltip="Contient tous les #defines, tous les #include, c'est le fichier père de tous les autres fichiers."];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/draw.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$draw_8h.html",tooltip="Contient les déclarations des fonctions d'affichage."];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/draw.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$draw_8c.html",tooltip="Contient toutes les fonctions en rapport avec l'affichage."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/input.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$input_8h.html",tooltip="Contient les déclarations des fonctions d'événements."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/input.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$input_8c.html",tooltip="Contient l'implémentation des fonctions d'événements ainsi que de jeu."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/init.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8h.html",tooltip="Contient les déclarations des fonctions d'initialisation."];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/init.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$init_8c.html",tooltip="Contient l'implémentation des fonctions d'initialisation, comme la police, les variables,..."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/sounds.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sounds_8h.html",tooltip="Contient les déclarations des fonctions de son."];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/sounds.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sounds_8c.html",tooltip="Contient l'implémentation des fonctions en rapport avec la musique, la création des channels,..."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/sockets.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sockets_8h.html",tooltip="Contient les déclarations des fonctions liées au réseau."];
+  Node13 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/sockets.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sockets_8c.html",tooltip="Contient l'implémentation des fonctions de réseau pour jouer en multijoueur."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/include\l/timer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8h.html",tooltip="Contient les déclarations des fonctions de temps."];
+  Node15 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/timer.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8c.html",tooltip="Contient l'implémentation des fonctions de temps, SDL_Delay . . ."];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="/mnt/c/Users/Rod4401\l/Desktop/Project L2/src\l/main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="Contient l'implémentation de la fonction int main() ainsi que tous les appels de librairies dynamique..."];
+}

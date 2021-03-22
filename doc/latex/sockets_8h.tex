@@ -1,0 +1,53 @@
+\hypertarget{sockets_8h}{}\doxysection{Référence du fichier /mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/include/sockets.h}
+\label{sockets_8h}\index{/mnt/c/Users/Rod4401/Desktop/Project L2/include/sockets.h@{/mnt/c/Users/Rod4401/Desktop/Project L2/include/sockets.h}}
+
+
+Contient les déclarations des fonctions liées au réseau.  
+
+
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de sockets.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sockets_8h_a57517d5e831b7aa9106ecee3f43fad92}\label{sockets_8h_a57517d5e831b7aa9106ecee3f43fad92}} 
+void \mbox{\hyperlink{sockets_8h_a57517d5e831b7aa9106ecee3f43fad92}{initialisation\+\_\+socket}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}initialiser les paramètres de la socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_a0d5e428ead5875e99663a6bb673fa0a8}\label{sockets_8h_a0d5e428ead5875e99663a6bb673fa0a8}} 
+int \mbox{\hyperlink{sockets_8h_a0d5e428ead5875e99663a6bb673fa0a8}{hostname\+\_\+to\+\_\+ip}} (char $\ast$hostname, char $\ast$ip)
+\begin{DoxyCompactList}\small\item\em Cette fonction transforme un hostname en ip \char`\"{}claire\char`\"{} pour le programme return 0 si aucune erreur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_abb6d84542b00def42761cd4f77a676d8}\label{sockets_8h_abb6d84542b00def42761cd4f77a676d8}} 
+void \mbox{\hyperlink{sockets_8h_abb6d84542b00def42761cd4f77a676d8}{creation\+\_\+socket}} (char $\ast$hostname)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de créer la socket qui écouteras sur le réseau les packets de données. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_ad437ca7f580119c3168d73da27f2d539}\label{sockets_8h_ad437ca7f580119c3168d73da27f2d539}} 
+void \mbox{\hyperlink{sockets_8h_ad437ca7f580119c3168d73da27f2d539}{connexion\+\_\+client}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction bloquante, permet d\textquotesingle{}attendre qu\textquotesingle{}un client (autre pc) se connect au serveur(ce pc) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_a1f81f7d4043b02f0022a15c9dc2c4821}\label{sockets_8h_a1f81f7d4043b02f0022a15c9dc2c4821}} 
+void \mbox{\hyperlink{sockets_8h_a1f81f7d4043b02f0022a15c9dc2c4821}{lire\+\_\+socket}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction traite les données présentes sur la socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_a634047fec0278b0c684c1df7259a0ad6}\label{sockets_8h_a634047fec0278b0c684c1df7259a0ad6}} 
+void \mbox{\hyperlink{sockets_8h_a634047fec0278b0c684c1df7259a0ad6}{ecrire\+\_\+socket}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}envoyer des données sur la socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sockets_8h_a5a4c208d9a183220c721c475ef96996b}\label{sockets_8h_a5a4c208d9a183220c721c475ef96996b}} 
+void \mbox{\hyperlink{sockets_8h_a5a4c208d9a183220c721c475ef96996b}{destruction\+\_\+socket}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction met fin à la socket, elle libère l\textquotesingle{}espace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Contient les déclarations des fonctions liées au réseau. 
+
+\begin{DoxyAuthor}{Auteur}
+Meunier Rodrigue Nicolas Lemoult Mathis Morisseau 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Le Mans Université 
+\end{DoxyCopyright}

@@ -1,0 +1,136 @@
+\hypertarget{structt__gestion}{}\doxysection{Référence de la structure t\+\_\+gestion}
+\label{structt__gestion}\index{t\_gestion@{t\_gestion}}
+
+
+Tout comme \mbox{\hyperlink{structt__parametres}{t\+\_\+parametres}}, \mbox{\hyperlink{structt__gestion}{t\+\_\+gestion}} est déclaré une seule fois.  
+
+
+
+
+{\ttfamily \#include $<$struct.\+h$>$}
+
+
+
+Graphe de collaboration de t\+\_\+gestion\+:
+% FIG 0
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structt__gestion_a62d4a3d1e7b18dd7a1772e3f2f8865e7}\label{structt__gestion_a62d4a3d1e7b18dd7a1772e3f2f8865e7}} 
+S\+D\+L\+\_\+\+Window $\ast$ {\bfseries fenetre\+\_\+jeu}
+\item 
+\mbox{\Hypertarget{structt__gestion_a32abd6e4d6dbb973637ad8f3d7b5cbd5}\label{structt__gestion_a32abd6e4d6dbb973637ad8f3d7b5cbd5}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ {\bfseries rendu\+\_\+fenetre}
+\item 
+\mbox{\Hypertarget{structt__gestion_a34d6185424b71ca12af7842b83f99be1}\label{structt__gestion_a34d6185424b71ca12af7842b83f99be1}} 
+int {\bfseries choix\+\_\+resolution}
+\item 
+\mbox{\Hypertarget{structt__gestion_adbb590a38e9535b982f0ad349750fc86}\label{structt__gestion_adbb590a38e9535b982f0ad349750fc86}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture\+\_\+accueil}
+\item 
+\mbox{\Hypertarget{structt__gestion_a7cea92ca00a730fa838b4d9aaa8433a8}\label{structt__gestion_a7cea92ca00a730fa838b4d9aaa8433a8}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture\+\_\+multijoueur}
+\item 
+\mbox{\Hypertarget{structt__gestion_a104f971649b8cffcfee6a687eba32d45}\label{structt__gestion_a104f971649b8cffcfee6a687eba32d45}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries textures\+\_\+fond\+\_\+accueil} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_ac35d66b6ae28c699aa345a2c52041ac8}\label{structt__gestion_ac35d66b6ae28c699aa345a2c52041ac8}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries transition}
+\item 
+\mbox{\Hypertarget{structt__gestion_a250a55352ffe93e0f5198368d9985ec0}\label{structt__gestion_a250a55352ffe93e0f5198368d9985ec0}} 
+int {\bfseries frequence\+\_\+video}
+\item 
+\mbox{\Hypertarget{structt__gestion_a9d8ec137b89cd2c1a87e09a043691cf2}\label{structt__gestion_a9d8ec137b89cd2c1a87e09a043691cf2}} 
+T\+T\+F\+\_\+\+Font $\ast$ {\bfseries police}
+\item 
+\mbox{\Hypertarget{structt__gestion_a58c0e94f15172f4ffc5ba19588502ea5}\label{structt__gestion_a58c0e94f15172f4ffc5ba19588502ea5}} 
+int {\bfseries fps\+Moy}
+\item 
+\mbox{\Hypertarget{structt__gestion_ab884efcda5947ceeb453f824a1bb2956}\label{structt__gestion_ab884efcda5947ceeb453f824a1bb2956}} 
+int {\bfseries fps\+Max}
+\item 
+\mbox{\Hypertarget{structt__gestion_ad6f7c046bbc07140cad81dde171af59a}\label{structt__gestion_ad6f7c046bbc07140cad81dde171af59a}} 
+int {\bfseries fps\+Min}
+\item 
+\mbox{\Hypertarget{structt__gestion_a4a2d87f21bef465d5c05c167622933e0}\label{structt__gestion_a4a2d87f21bef465d5c05c167622933e0}} 
+int {\bfseries tableau\+\_\+fps} \mbox{[}20\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_a1bb2f2a573d79df8fecb9bc3a87e5059}\label{structt__gestion_a1bb2f2a573d79df8fecb9bc3a87e5059}} 
+int {\bfseries focus\+\_\+loose}
+\item 
+\mbox{\Hypertarget{structt__gestion_aefdcbd64d86c975db55170cf5fe3d5cf}\label{structt__gestion_aefdcbd64d86c975db55170cf5fe3d5cf}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries textures\+\_\+fond\+\_\+jeu} \mbox{[}N\+B\+\_\+\+I\+M\+G\+\_\+\+F\+O\+ND\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_aa71eb699448de5047bf7c48e5d02bc12}\label{structt__gestion_aa71eb699448de5047bf7c48e5d02bc12}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries textures\+\_\+plateau\+\_\+jeu} \mbox{[}N\+B\+\_\+\+I\+M\+G\+\_\+\+P\+L\+A\+T\+E\+AU\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_aee1eb6cddcbc2103e7f80bfec308eb5e}\label{structt__gestion_aee1eb6cddcbc2103e7f80bfec308eb5e}} 
+int {\bfseries texture\+\_\+plateau\+\_\+jeu\+\_\+selectione}
+\item 
+\mbox{\Hypertarget{structt__gestion_ad939fa910a44260a838adce4f8abf4ed}\label{structt__gestion_ad939fa910a44260a838adce4f8abf4ed}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries textures\+\_\+personnages\+\_\+joueurs} \mbox{[}4\mbox{]}\mbox{[}6\mbox{]}\mbox{[}10\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_a945325ffd0c6b6b5a6a8b4e58c137b30}\label{structt__gestion_a945325ffd0c6b6b5a6a8b4e58c137b30}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries selection\+\_\+personnages}
+\item 
+\mbox{\Hypertarget{structt__gestion_a13ad566adee3e5f15cfbffbe169f177e}\label{structt__gestion_a13ad566adee3e5f15cfbffbe169f177e}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries selecteur}
+\item 
+\mbox{\Hypertarget{structt__gestion_a42b64999b082984f671595eff6d066c2}\label{structt__gestion_a42b64999b082984f671595eff6d066c2}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries surface\+\_\+fps}
+\item 
+\mbox{\Hypertarget{structt__gestion_aba63f69d3a62c81b401804124ced45c2}\label{structt__gestion_aba63f69d3a62c81b401804124ced45c2}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture\+\_\+fps}
+\item 
+\mbox{\Hypertarget{structt__gestion_ac0a1e36ba714e2b05eaa3ab5a8eaabc5}\label{structt__gestion_ac0a1e36ba714e2b05eaa3ab5a8eaabc5}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries vie\+\_\+joueurs}
+\item 
+\mbox{\Hypertarget{structt__gestion_aab24e09610a5830c6b952e87e7ebfe7e}\label{structt__gestion_aab24e09610a5830c6b952e87e7ebfe7e}} 
+S\+D\+L\+\_\+\+Surface $\ast$ {\bfseries rectangle\+\_\+vie}
+\item 
+\mbox{\Hypertarget{structt__gestion_a5dff035edc91d3527dc92815de7aa62a}\label{structt__gestion_a5dff035edc91d3527dc92815de7aa62a}} 
+S\+D\+L\+\_\+\+Texture $\ast$ {\bfseries texture\+\_\+rect\+\_\+vie}
+\item 
+\mbox{\Hypertarget{structt__gestion_a8c6b1b0a5d5a4151c4ac1ead2038e10b}\label{structt__gestion_a8c6b1b0a5d5a4151c4ac1ead2038e10b}} 
+int {\bfseries perte\+\_\+vie}
+\item 
+\mbox{\Hypertarget{structt__gestion_a6b0f90a0e427a55afdc202b5329b638c}\label{structt__gestion_a6b0f90a0e427a55afdc202b5329b638c}} 
+int {\bfseries frames\+\_\+evolution}
+\item 
+\mbox{\Hypertarget{structt__gestion_a2c88bff458acb9df1d0438a411f07176}\label{structt__gestion_a2c88bff458acb9df1d0438a411f07176}} 
+int {\bfseries nombre\+\_\+joueurs}
+\item 
+\mbox{\Hypertarget{structt__gestion_a324f3fac185c0e7eabbd15ab78b4f589}\label{structt__gestion_a324f3fac185c0e7eabbd15ab78b4f589}} 
+int {\bfseries reseau\+On}
+\item 
+\mbox{\Hypertarget{structt__gestion_ada88a1b4dca949f47b0aaf9d1be96850}\label{structt__gestion_ada88a1b4dca949f47b0aaf9d1be96850}} 
+\mbox{\hyperlink{structt__joueur}{t\+\_\+joueur}} {\bfseries joueurs} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_a9b14fe96020a82ca3bbb46ddc20525a8}\label{structt__gestion_a9b14fe96020a82ca3bbb46ddc20525a8}} 
+int {\bfseries tableau\+\_\+event} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{structt__gestion_a64fb7e6d75d10df16d30134511b24870}\label{structt__gestion_a64fb7e6d75d10df16d30134511b24870}} 
+int {\bfseries ticks\+\_\+depart}
+\item 
+\mbox{\Hypertarget{structt__gestion_a7295b1c7e112b5f6c50a97ca9a174af0}\label{structt__gestion_a7295b1c7e112b5f6c50a97ca9a174af0}} 
+int {\bfseries ticks\+\_\+fin}
+\item 
+\mbox{\Hypertarget{structt__gestion_afbbfcd9fc5ec34744a3f27cd1a5aaf37}\label{structt__gestion_afbbfcd9fc5ec34744a3f27cd1a5aaf37}} 
+int {\bfseries ticks\+\_\+evo}
+\item 
+\mbox{\Hypertarget{structt__gestion_a64694a8cd55247fe94c6f39881494e5d}\label{structt__gestion_a64694a8cd55247fe94c6f39881494e5d}} 
+int {\bfseries ticks\+\_\+actions}
+\item 
+\mbox{\Hypertarget{structt__gestion_a055bf4099db69a3ef9d78fc6c25465e0}\label{structt__gestion_a055bf4099db69a3ef9d78fc6c25465e0}} 
+F\+I\+LE $\ast$ {\bfseries debug}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Tout comme \mbox{\hyperlink{structt__parametres}{t\+\_\+parametres}}, \mbox{\hyperlink{structt__gestion}{t\+\_\+gestion}} est déclaré une seule fois. 
+
+\mbox{\hyperlink{structt__gestion}{t\+\_\+gestion}} est une structure très importante car elle stocke globalement des pointeurs de structures S\+DL qui permettent de \char`\"{}garder\char`\"{} des textures. Elle stocke également des informations qui ne sont pas des parametres comme le nombre de joueurs d\textquotesingle{}une parie, les fps \char`\"{}affichés\char`\"{} etc 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/include/\mbox{\hyperlink{struct_8h}{struct.\+h}}\end{DoxyCompactItemize}

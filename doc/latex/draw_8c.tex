@@ -1,0 +1,178 @@
+\hypertarget{draw_8c}{}\doxysection{Référence du fichier /mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/src/draw.c}
+\label{draw_8c}\index{/mnt/c/Users/Rod4401/Desktop/Project L2/src/draw.c@{/mnt/c/Users/Rod4401/Desktop/Project L2/src/draw.c}}
+
+
+Contient toutes les fonctions en rapport avec l\textquotesingle{}affichage.  
+
+
+{\ttfamily \#include \char`\"{}../include/draw.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de draw.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{draw_8c_aa334b298ac12dacf4492d5bd5635be3d}\label{draw_8c_aa334b298ac12dacf4492d5bd5635be3d}} 
+void \mbox{\hyperlink{draw_8c_aa334b298ac12dacf4492d5bd5635be3d}{definir\+\_\+resolutions}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction rempli le tableau de résolution. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_ab692135bf98011eb74d2efe1962916b2}\label{draw_8c_ab692135bf98011eb74d2efe1962916b2}} 
+void \mbox{\hyperlink{draw_8c_ab692135bf98011eb74d2efe1962916b2}{charger\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction charge en mémoire les textures globales comme celle de l\textquotesingle{}accueil ou encore celle des paramêtres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a3ae0debfa94f3a243a8f78f19943964a}\label{draw_8c_a3ae0debfa94f3a243a8f78f19943964a}} 
+void \mbox{\hyperlink{draw_8c_a3ae0debfa94f3a243a8f78f19943964a}{recharger\+\_\+\+Texture}} (S\+D\+L\+\_\+\+Texture $\ast$$\ast$texture, char $\ast$source)
+\begin{DoxyCompactList}\small\item\em Pour éviter d\textquotesingle{}avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup trop élévée, le programme va décharger les textures, cette fonction recharge une texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}\label{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}} 
+void \mbox{\hyperlink{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}{decharger\+\_\+\+Texture}} (S\+D\+L\+\_\+\+Texture $\ast$$\ast$texture)
+\begin{DoxyCompactList}\small\item\em Pour éviter d\textquotesingle{}avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup trop élévée, le programme va décharger les textures, cette fonction décharge la texture qui lui est passée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}{creation\+\_\+textures\+\_\+personnage}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction créer les textures en fonction du choix du joueur sur son personnage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_ad72da57fc7d9d206452956ae32e0c2e8}\label{draw_8c_ad72da57fc7d9d206452956ae32e0c2e8}} 
+void \mbox{\hyperlink{draw_8c_ad72da57fc7d9d206452956ae32e0c2e8}{destruction\+\_\+textures\+\_\+personnage}} ()
+\begin{DoxyCompactList}\small\item\em Comme nous pouvons pas nous pemettre de stocker des Go de texture il faut libérer les textures, cette fonction s\textquotesingle{}en charge. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_ac9edddb7dd4da949907b0f0f02cb079d}\label{draw_8c_ac9edddb7dd4da949907b0f0f02cb079d}} 
+void \mbox{\hyperlink{draw_8c_ac9edddb7dd4da949907b0f0f02cb079d}{creation\+\_\+fenetre}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction, appellée avant le chargement, créer la fenêtre qui accueillera les textures du jeu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw_8c_a30974d481bc73f2982defef738c2dfd0}{creation\+\_\+popup\+\_\+erreur}} (char texte\mbox{[}30\mbox{]})
+\begin{DoxyCompactList}\small\item\em Cette fonction affiche une popup en cas d\textquotesingle{}erreur avec écrit le code d\textquotesingle{}erreur en question. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a68f514399e95cc336b551386e7f33f1b}\label{draw_8c_a68f514399e95cc336b551386e7f33f1b}} 
+void \mbox{\hyperlink{draw_8c_a68f514399e95cc336b551386e7f33f1b}{chargement\+\_\+demarrage}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction réalise l\textquotesingle{}affichage de l\textquotesingle{}écran de démarrage du jeu, en affichant le logo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a05b28046b5b3d317fce5eb3d28776267}\label{draw_8c_a05b28046b5b3d317fce5eb3d28776267}} 
+void \mbox{\hyperlink{draw_8c_a05b28046b5b3d317fce5eb3d28776267}{transition\+\_\+visuelle}} ()
+\begin{DoxyCompactList}\small\item\em Pour éviter d\textquotesingle{}avoir un changement brutale de texture, cette fonction \char`\"{}noirci\char`\"{} la texture afin de réaliser une transition correcte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a7e0f9216403ae3237d2ae8db61005053}\label{draw_8c_a7e0f9216403ae3237d2ae8db61005053}} 
+void \mbox{\hyperlink{draw_8c_a7e0f9216403ae3237d2ae8db61005053}{affichage\+\_\+accueil}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction affiche le la vidéo en arrière plan ainsi que le menu de l\textquotesingle{}accueil. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a946f05affd4bc659152261d108699beb}\label{draw_8c_a946f05affd4bc659152261d108699beb}} 
+void \mbox{\hyperlink{draw_8c_a946f05affd4bc659152261d108699beb}{afficher\+\_\+details\+\_\+parametres}} ()
+\begin{DoxyCompactList}\small\item\em Selon la page dans les parametres que nous nous trouvons, les informations que dispose le programme doivent être affichés, cette fonction réalise cette tache. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a8e14f857182d6b173364e88e28ba63b6}\label{draw_8c_a8e14f857182d6b173364e88e28ba63b6}} 
+void \mbox{\hyperlink{draw_8c_a8e14f857182d6b173364e88e28ba63b6}{affichage\+\_\+fps}} ()
+\begin{DoxyCompactList}\small\item\em Comme dans tous jeu de \char`\"{}baston\char`\"{} on peut être ammené à quel fréquence le programme \char`\"{}tourne\char`\"{}, cette fonction affiche les fps moyen, min et max si le joueur à choisi de les afficher. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a1fc9e2d2349060e2a77d267258500331}\label{draw_8c_a1fc9e2d2349060e2a77d267258500331}} 
+void \mbox{\hyperlink{draw_8c_a1fc9e2d2349060e2a77d267258500331}{rendre\+\_\+affichage}} ()
+\begin{DoxyCompactList}\small\item\em Pour éviter de se mélanger les pinceaux, cette fonction réalise l\textquotesingle{}affichage du rendu, comme en S\+DL les textures sont superposées comme des calques, cette fonction affichera le sommet du calque. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_abec696ae00fa086bf185b12dcfdd4534}\label{draw_8c_abec696ae00fa086bf185b12dcfdd4534}} 
+void \mbox{\hyperlink{draw_8c_abec696ae00fa086bf185b12dcfdd4534}{afficher\+\_\+partie}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction affiche le fond d\textquotesingle{}écran de la partie ainsi que les plateformes, celles ci sont sélectionnées dans les paramêtres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a37eca3b2ca3a1d972443dd716d4e5d63}\label{draw_8c_a37eca3b2ca3a1d972443dd716d4e5d63}} 
+void \mbox{\hyperlink{draw_8c_a37eca3b2ca3a1d972443dd716d4e5d63}{afficher\+\_\+joueurs}} ()
+\begin{DoxyCompactList}\small\item\em En fonction des textures séléctionnées par le joueur, le programme durant la partie va afficher les joueurs grâce à cette fonction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_abab09e197272673e9bf94dede6a63191}\label{draw_8c_abab09e197272673e9bf94dede6a63191}} 
+void \mbox{\hyperlink{draw_8c_abab09e197272673e9bf94dede6a63191}{afficher\+\_\+vie\+\_\+joueurs}} ()
+\begin{DoxyCompactList}\small\item\em Les personnages ont une bare de vie, donc à tout moment le joueur est ammené à savoir combien de vie a son personnage, cette fonction affiche à l\textquotesingle{}écran la vie de tous les joueurs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a92cb192980bb95e04b50023453517afe}\label{draw_8c_a92cb192980bb95e04b50023453517afe}} 
+void \mbox{\hyperlink{draw_8c_a92cb192980bb95e04b50023453517afe}{afficher\+\_\+ecran\+\_\+multijoueur}} ()
+\begin{DoxyCompactList}\small\item\em Une fois le mode multijoueur séléctionné, le joueur est ammené à selectionner un mode \char`\"{}2j/4\+J \+:: local / réseau\char`\"{}, cette fonction affiche à l\textquotesingle{}écran des cases où cliquer pour selectionner ce mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a25a25909fa41f9996e9457c1fdfa0815}\label{draw_8c_a25a25909fa41f9996e9457c1fdfa0815}} 
+void \mbox{\hyperlink{draw_8c_a25a25909fa41f9996e9457c1fdfa0815}{afficher\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em Si le(s) joueur(s) est(sont) en local, il y a la possibilité de mettre pause, cette fonction affiche le menu pause. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a0eb6302b244f141c88a8b7a02610146b}\label{draw_8c_a0eb6302b244f141c88a8b7a02610146b}} 
+void \mbox{\hyperlink{draw_8c_a0eb6302b244f141c88a8b7a02610146b}{modifier\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em Lorsque l\textquotesingle{}utilisateur est dans les paramètres du jeu, il peut être ammené à modifier la taille de sa fenêtre, cette fonction regroupe toutes les fonctions réalisant ce changement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_af471b7e1463082cd616711b1dc8050e8}\label{draw_8c_af471b7e1463082cd616711b1dc8050e8}} 
+void \mbox{\hyperlink{draw_8c_af471b7e1463082cd616711b1dc8050e8}{affiche\+\_\+choix\+\_\+personnages}} (int $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher le selecteur qui rend compte de quels personnages les joueurs sont ammenés à jouer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{draw_8c_a8e99b0d4af03dd4d80593ebc9fb0982d}\label{draw_8c_a8e99b0d4af03dd4d80593ebc9fb0982d}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Blanc} = \{255,255,255,255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a3829291648e15b11d7c1217bd572b19a}\label{draw_8c_a3829291648e15b11d7c1217bd572b19a}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Bleu} = \{0, 0, 255, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a916c7b8ba69a705f03efa0de9b207faa}\label{draw_8c_a916c7b8ba69a705f03efa0de9b207faa}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Orange} = \{255, 140, 40, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a87c3bf83e4ae7b1fe2e2322f2d97ba19}\label{draw_8c_a87c3bf83e4ae7b1fe2e2322f2d97ba19}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Vert} = \{0, 255, 0, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a90d4595c8309b70e5dd3273d53557e4d}\label{draw_8c_a90d4595c8309b70e5dd3273d53557e4d}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Jaune} = \{255, 255, 0, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a7c0df93630a3c44ccd46cc119862194c}\label{draw_8c_a7c0df93630a3c44ccd46cc119862194c}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Rose} = \{255, 110, 137, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_af00cd41bb57af2100e2f0824b7049a81}\label{draw_8c_af00cd41bb57af2100e2f0824b7049a81}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Rouge} = \{255, 0, 0, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a7253a4214cff76a50200298a2dcd47ba}\label{draw_8c_a7253a4214cff76a50200298a2dcd47ba}} 
+S\+D\+L\+\_\+\+Color {\bfseries couleur\+Noir} = \{0, 0, 0, 255\}
+\item 
+\mbox{\Hypertarget{draw_8c_a6ca80ee27891134c4b504d14e9b3bfe8}\label{draw_8c_a6ca80ee27891134c4b504d14e9b3bfe8}} 
+const float {\bfseries tab\+\_\+rapport} \mbox{[}4\mbox{]} = \{R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J1\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J2\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J3\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J4\+\_\+\+V\+IE\}
+\item 
+const uint32\+\_\+t {\bfseries tab\+\_\+map\+R\+GB} \mbox{[}4\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Contient toutes les fonctions en rapport avec l\textquotesingle{}affichage. 
+
+\begin{DoxyAuthor}{Auteur}
+Meunier Rodrigue Nicolas Lemoult Mathis Morisseau 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Le Mans Université 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{draw_8c_a30974d481bc73f2982defef738c2dfd0}\label{draw_8c_a30974d481bc73f2982defef738c2dfd0}} 
+\index{draw.c@{draw.c}!creation\_popup\_erreur@{creation\_popup\_erreur}}
+\index{creation\_popup\_erreur@{creation\_popup\_erreur}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{creation\_popup\_erreur()}{creation\_popup\_erreur()}}
+{\footnotesize\ttfamily int creation\+\_\+popup\+\_\+erreur (\begin{DoxyParamCaption}\item[{char}]{texte\mbox{[}30\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Cette fonction affiche une popup en cas d\textquotesingle{}erreur avec écrit le code d\textquotesingle{}erreur en question. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em texte\mbox{[}30\mbox{]}} & Code d\textquotesingle{}erreur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si l\textquotesingle{}utilisateur souhaite poursuivre malgré l\textquotesingle{}erreur ou 0 si arret 
+\end{DoxyReturn}
+\mbox{\Hypertarget{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}\label{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}} 
+\index{draw.c@{draw.c}!creation\_textures\_personnage@{creation\_textures\_personnage}}
+\index{creation\_textures\_personnage@{creation\_textures\_personnage}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{creation\_textures\_personnage()}{creation\_textures\_personnage()}}
+{\footnotesize\ttfamily void creation\+\_\+textures\+\_\+personnage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette fonction créer les textures en fonction du choix du joueur sur son personnage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em 1} & si on ne veut charger que les textures idle pour choix personnage \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{draw_8c_a4c963ba0a517e0ad6183a987eb91ed90}\label{draw_8c_a4c963ba0a517e0ad6183a987eb91ed90}} 
+\index{draw.c@{draw.c}!tab\_mapRGB@{tab\_mapRGB}}
+\index{tab\_mapRGB@{tab\_mapRGB}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{tab\_mapRGB}{tab\_mapRGB}}
+{\footnotesize\ttfamily const uint32\+\_\+t tab\+\_\+map\+R\+GB\mbox{[}4\mbox{]}\mbox{[}3\mbox{]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{    \{255,    0,      0\},}
+\DoxyCodeLine{    \{255,    255,    0\},}
+\DoxyCodeLine{    \{0,      0,      255\},}
+\DoxyCodeLine{    \{0,      255,    0\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

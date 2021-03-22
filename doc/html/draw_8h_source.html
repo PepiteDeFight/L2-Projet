@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pépite De Fight:  Fichier source de /mnt/c/Users/Rod4401/Desktop/Project L2/include/draw.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pépite De Fight
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">draw.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="draw_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __DRAW__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __DRAW__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struct_8h.html">struct.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*  FONCTIONS   */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#aa334b298ac12dacf4492d5bd5635be3d">definir_resolutions</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#ab692135bf98011eb74d2efe1962916b2">chargerTextures</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a3ae0debfa94f3a243a8f78f19943964a">recharger_Texture</a>(SDL_Texture **texture,<span class="keywordtype">char</span> *source);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a5c80a45e6639bc14aea7ea2f8d320658">decharger_Texture</a>(SDL_Texture **texture);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">creation_textures_personnage</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#ad72da57fc7d9d206452956ae32e0c2e8">destruction_textures_personnage</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#ac9edddb7dd4da949907b0f0f02cb079d">creation_fenetre</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="draw_8h.html#a30974d481bc73f2982defef738c2dfd0">creation_popup_erreur</a>(<span class="keywordtype">char</span> texte[30]);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a68f514399e95cc336b551386e7f33f1b">chargement_demarrage</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a05b28046b5b3d317fce5eb3d28776267">transition_visuelle</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a7e0f9216403ae3237d2ae8db61005053">affichage_accueil</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a946f05affd4bc659152261d108699beb">afficher_details_parametres</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a8e14f857182d6b173364e88e28ba63b6">affichage_fps</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a1fc9e2d2349060e2a77d267258500331">rendre_affichage</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#abec696ae00fa086bf185b12dcfdd4534">afficher_partie</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a37eca3b2ca3a1d972443dd716d4e5d63">afficher_joueurs</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#abab09e197272673e9bf94dede6a63191">afficher_vie_joueurs</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a92cb192980bb95e04b50023453517afe">afficher_ecran_multijoueur</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a25a25909fa41f9996e9457c1fdfa0815">afficher_pause</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#a0eb6302b244f141c88a8b7a02610146b">modifier_window</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8h.html#af471b7e1463082cd616711b1dc8050e8">affiche_choix_personnages</a>(<span class="keywordtype">int</span> *tab);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // __DRAW__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="adraw_8h_html_a7e0f9216403ae3237d2ae8db61005053"><div class="ttname"><a href="draw_8h.html#a7e0f9216403ae3237d2ae8db61005053">affichage_accueil</a></div><div class="ttdeci">void affichage_accueil()</div><div class="ttdoc">Cette fonction affiche le la vidéo en arrière plan ainsi que le menu de l'accueil.</div><div class="ttdef"><b>Definition:</b> draw.c:375</div></div>
+<div class="ttc" id="adraw_8h_html_a05b28046b5b3d317fce5eb3d28776267"><div class="ttname"><a href="draw_8h.html#a05b28046b5b3d317fce5eb3d28776267">transition_visuelle</a></div><div class="ttdeci">void transition_visuelle()</div><div class="ttdoc">Pour éviter d'avoir un changement brutale de texture, cette fonction &quot;noirci&quot; la texture afin de réal...</div><div class="ttdef"><b>Definition:</b> draw.c:354</div></div>
+<div class="ttc" id="adraw_8h_html_ab692135bf98011eb74d2efe1962916b2"><div class="ttname"><a href="draw_8h.html#ab692135bf98011eb74d2efe1962916b2">chargerTextures</a></div><div class="ttdeci">void chargerTextures()</div><div class="ttdoc">Cette fonction charge en mémoire les textures globales comme celle de l'accueil ou encore celle des p...</div><div class="ttdef"><b>Definition:</b> draw.c:57</div></div>
+<div class="ttc" id="adraw_8h_html_a5c80a45e6639bc14aea7ea2f8d320658"><div class="ttname"><a href="draw_8h.html#a5c80a45e6639bc14aea7ea2f8d320658">decharger_Texture</a></div><div class="ttdeci">void decharger_Texture(SDL_Texture **texture)</div><div class="ttdoc">Pour éviter d'avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup tro...</div><div class="ttdef"><b>Definition:</b> draw.c:117</div></div>
+<div class="ttc" id="adraw_8h_html_abab09e197272673e9bf94dede6a63191"><div class="ttname"><a href="draw_8h.html#abab09e197272673e9bf94dede6a63191">afficher_vie_joueurs</a></div><div class="ttdeci">void afficher_vie_joueurs()</div><div class="ttdoc">Les personnages ont une bare de vie, donc à tout moment le joueur est ammené à savoir combien de vie ...</div><div class="ttdef"><b>Definition:</b> draw.c:579</div></div>
+<div class="ttc" id="adraw_8h_html_ad72da57fc7d9d206452956ae32e0c2e8"><div class="ttname"><a href="draw_8h.html#ad72da57fc7d9d206452956ae32e0c2e8">destruction_textures_personnage</a></div><div class="ttdeci">void destruction_textures_personnage()</div><div class="ttdoc">Comme nous pouvons pas nous pemettre de stocker des Go de texture il faut libérer les textures,...</div><div class="ttdef"><b>Definition:</b> draw.c:241</div></div>
+<div class="ttc" id="adraw_8h_html_a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><div class="ttname"><a href="draw_8h.html#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">creation_textures_personnage</a></div><div class="ttdeci">void creation_textures_personnage()</div><div class="ttdoc">Cette fonction créer les textures en fonction du choix du joueur sur son personnage.</div><div class="ttdef"><b>Definition:</b> draw.c:128</div></div>
+<div class="ttc" id="adraw_8h_html_a25a25909fa41f9996e9457c1fdfa0815"><div class="ttname"><a href="draw_8h.html#a25a25909fa41f9996e9457c1fdfa0815">afficher_pause</a></div><div class="ttdeci">void afficher_pause()</div><div class="ttdoc">Si le(s) joueur(s) est(sont) en local, il y a la possibilité de mettre pause, cette fonction affiche ...</div><div class="ttdef"><b>Definition:</b> draw.c:613</div></div>
+<div class="ttc" id="adraw_8h_html_a946f05affd4bc659152261d108699beb"><div class="ttname"><a href="draw_8h.html#a946f05affd4bc659152261d108699beb">afficher_details_parametres</a></div><div class="ttdeci">void afficher_details_parametres()</div><div class="ttdoc">Selon la page dans les parametres que nous nous trouvons, les informations que dispose le programme d...</div><div class="ttdef"><b>Definition:</b> draw.c:392</div></div>
+<div class="ttc" id="adraw_8h_html_a8e14f857182d6b173364e88e28ba63b6"><div class="ttname"><a href="draw_8h.html#a8e14f857182d6b173364e88e28ba63b6">affichage_fps</a></div><div class="ttdeci">void affichage_fps()</div><div class="ttdoc">Comme dans tous jeu de &quot;baston&quot; on peut être ammené à quel fréquence le programme &quot;tourne&quot;,...</div><div class="ttdef"><b>Definition:</b> draw.c:508</div></div>
+<div class="ttc" id="adraw_8h_html_a1fc9e2d2349060e2a77d267258500331"><div class="ttname"><a href="draw_8h.html#a1fc9e2d2349060e2a77d267258500331">rendre_affichage</a></div><div class="ttdeci">void rendre_affichage()</div><div class="ttdoc">Pour éviter de se mélanger les pinceaux, cette fonction réalise l'affichage du rendu,...</div><div class="ttdef"><b>Definition:</b> draw.c:531</div></div>
+<div class="ttc" id="adraw_8h_html_aa334b298ac12dacf4492d5bd5635be3d"><div class="ttname"><a href="draw_8h.html#aa334b298ac12dacf4492d5bd5635be3d">definir_resolutions</a></div><div class="ttdeci">void definir_resolutions()</div><div class="ttdoc">Cette fonction rempli le tableau de résolution.</div><div class="ttdef"><b>Definition:</b> draw.c:31</div></div>
+<div class="ttc" id="adraw_8h_html_abec696ae00fa086bf185b12dcfdd4534"><div class="ttname"><a href="draw_8h.html#abec696ae00fa086bf185b12dcfdd4534">afficher_partie</a></div><div class="ttdeci">void afficher_partie()</div><div class="ttdoc">Cette fonction affiche le fond d'écran de la partie ainsi que les plateformes, celles ci sont sélecti...</div><div class="ttdef"><b>Definition:</b> draw.c:539</div></div>
+<div class="ttc" id="adraw_8h_html_ac9edddb7dd4da949907b0f0f02cb079d"><div class="ttname"><a href="draw_8h.html#ac9edddb7dd4da949907b0f0f02cb079d">creation_fenetre</a></div><div class="ttdeci">void creation_fenetre()</div><div class="ttdoc">Cette fonction, appellée avant le chargement, créer la fenêtre qui accueillera les textures du jeu.</div><div class="ttdef"><b>Definition:</b> draw.c:256</div></div>
+<div class="ttc" id="adraw_8h_html_a0eb6302b244f141c88a8b7a02610146b"><div class="ttname"><a href="draw_8h.html#a0eb6302b244f141c88a8b7a02610146b">modifier_window</a></div><div class="ttdeci">void modifier_window()</div><div class="ttdoc">Lorsque l'utilisateur est dans les paramètres du jeu, il peut être ammené à modifier la taille de sa ...</div><div class="ttdef"><b>Definition:</b> draw.c:621</div></div>
+<div class="ttc" id="astruct_8h_html"><div class="ttname"><a href="struct_8h.html">struct.h</a></div><div class="ttdoc">C'est également un fichier père car struct.h contient toutes les déclarations des structures liées au...</div></div>
+<div class="ttc" id="adraw_8h_html_a92cb192980bb95e04b50023453517afe"><div class="ttname"><a href="draw_8h.html#a92cb192980bb95e04b50023453517afe">afficher_ecran_multijoueur</a></div><div class="ttdeci">void afficher_ecran_multijoueur()</div><div class="ttdoc">Une fois le mode multijoueur séléctionné, le joueur est ammené à selectionner un mode &quot;2j/4J :: local...</div><div class="ttdef"><b>Definition:</b> draw.c:603</div></div>
+<div class="ttc" id="adraw_8h_html_af471b7e1463082cd616711b1dc8050e8"><div class="ttname"><a href="draw_8h.html#af471b7e1463082cd616711b1dc8050e8">affiche_choix_personnages</a></div><div class="ttdeci">void affiche_choix_personnages(int *tab)</div><div class="ttdoc">Cette fonction permet d'afficher le selecteur qui rend compte de quels personnages les joueurs sont a...</div><div class="ttdef"><b>Definition:</b> draw.c:640</div></div>
+<div class="ttc" id="adraw_8h_html_a68f514399e95cc336b551386e7f33f1b"><div class="ttname"><a href="draw_8h.html#a68f514399e95cc336b551386e7f33f1b">chargement_demarrage</a></div><div class="ttdeci">void chargement_demarrage()</div><div class="ttdoc">Cette fonction réalise l'affichage de l'écran de démarrage du jeu, en affichant le logo.</div><div class="ttdef"><b>Definition:</b> draw.c:307</div></div>
+<div class="ttc" id="adraw_8h_html_a3ae0debfa94f3a243a8f78f19943964a"><div class="ttname"><a href="draw_8h.html#a3ae0debfa94f3a243a8f78f19943964a">recharger_Texture</a></div><div class="ttdeci">void recharger_Texture(SDL_Texture **texture, char *source)</div><div class="ttdoc">Pour éviter d'avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup tro...</div><div class="ttdef"><b>Definition:</b> draw.c:105</div></div>
+<div class="ttc" id="adraw_8h_html_a30974d481bc73f2982defef738c2dfd0"><div class="ttname"><a href="draw_8h.html#a30974d481bc73f2982defef738c2dfd0">creation_popup_erreur</a></div><div class="ttdeci">int creation_popup_erreur(char texte[30])</div><div class="ttdoc">Cette fonction affiche une popup en cas d'erreur avec écrit le code d'erreur en question.</div><div class="ttdef"><b>Definition:</b> draw.c:278</div></div>
+<div class="ttc" id="adraw_8h_html_a37eca3b2ca3a1d972443dd716d4e5d63"><div class="ttname"><a href="draw_8h.html#a37eca3b2ca3a1d972443dd716d4e5d63">afficher_joueurs</a></div><div class="ttdeci">void afficher_joueurs()</div><div class="ttdoc">En fonction des textures séléctionnées par le joueur, le programme durant la partie va afficher les j...</div><div class="ttdef"><b>Definition:</b> draw.c:552</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

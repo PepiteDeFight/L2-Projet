@@ -1,0 +1,110 @@
+\hypertarget{input_8h}{}\doxysection{Référence du fichier /mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/include/input.h}
+\label{input_8h}\index{/mnt/c/Users/Rod4401/Desktop/Project L2/include/input.h@{/mnt/c/Users/Rod4401/Desktop/Project L2/include/input.h}}
+
+
+Contient les déclarations des fonctions d\textquotesingle{}événements.  
+
+
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de input.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input_8h_ad9af6809f0dc2a783e9143473989c151}{input\+\_\+popup}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction gère l\textquotesingle{}entrée des événements de la popup d\textquotesingle{}erreur, dans le cas où une erreur survient (cf \+: \mbox{\hyperlink{init_8c_afa7521ae01d0558194aca05f49f8c81c}{quitter()}} -\/$>$ \mbox{\hyperlink{init_8c}{init.\+c}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8h_a029456a0d305631c227c40fc3950469b}\label{input_8h_a029456a0d305631c227c40fc3950469b}} 
+void \mbox{\hyperlink{input_8h_a029456a0d305631c227c40fc3950469b}{accueil}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction gère l\textquotesingle{}entrée des événements de l\textquotesingle{}accueil, c\textquotesingle{}est la fonction principale du programme, elle permet à l\textquotesingle{}utilisateur d\textquotesingle{}accéder au différents modes de jeu ainsi qu\textquotesingle{}aux paramètres et de quitter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8h_a912ce89f9461d5e13e0f79993e348e84}\label{input_8h_a912ce89f9461d5e13e0f79993e348e84}} 
+void \mbox{\hyperlink{input_8h_a912ce89f9461d5e13e0f79993e348e84}{menu\+\_\+parametre}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction gère l\textquotesingle{}entrée des événements du menu des parametre, cette fonction permet à l\textquotesingle{}utilisateur grâce à l\textquotesingle{}interface graphique de changer ses controles, ses fps etc... \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8h_addc7e119bdd7363bc255b1e162eab5f4}\label{input_8h_addc7e119bdd7363bc255b1e162eab5f4}} 
+void \mbox{\hyperlink{input_8h_addc7e119bdd7363bc255b1e162eab5f4}{campagne}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction gère les événements du menu campagne pour une éventuelle partie en solo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{input_8h_a0ff46a1ca469b499977e3efe700b9147}{multijoueur}} ()
+\begin{DoxyCompactList}\small\item\em Contrairement à campagne la fonction multijoueur permet de récupérer la façon dont une partie va se déroulé, elle permet également de savoir si une partie va se dérouler en réseau ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8h_a13093b5dd382c3fa59e95a1f83bd8323}\label{input_8h_a13093b5dd382c3fa59e95a1f83bd8323}} 
+void \mbox{\hyperlink{input_8h_a13093b5dd382c3fa59e95a1f83bd8323}{partie}} ()
+\begin{DoxyCompactList}\small\item\em La fonction coeur du jeu, elle permet de faire une partie du jeu en multijoueur, cette fonction récupère les actions/events des joueurs et appelle les fonctions d\textquotesingle{}\mbox{\hyperlink{actions_8c}{actions.\+c}} pour mouvoir, faire attacker les joueurs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{input_8h_a27319d2b008bb66aca61479c2863a77f}{choix\+\_\+serveur}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de récupèrer l\textquotesingle{}ip du serveur sur lequel une éventuelle partie en réseau se déroulerais. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{input_8h_aa2a70a0ba2b3d111d5088fe910487b29}{choix\+\_\+personnages}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de savoir quel personnage chaque joueur va jouer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8h_afb3b17ebf4a8eede1f6bdd6fd2e8817f}\label{input_8h_afb3b17ebf4a8eede1f6bdd6fd2e8817f}} 
+void \mbox{\hyperlink{input_8h_afb3b17ebf4a8eede1f6bdd6fd2e8817f}{jeu\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de faire une pause tant que l\textquotesingle{}utilisateur n\textquotesingle{}a pas appuyer sur echape, elle n\textquotesingle{}est pas dans \mbox{\hyperlink{timer_8c}{timer.\+c}} car elle n\textquotesingle{}agit pas directement sur le temps, elle fait une sorte de boucle sans changer l\textquotesingle{}affichage. Ps\+: disponible uniquement en local. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Contient les déclarations des fonctions d\textquotesingle{}événements. 
+
+\begin{DoxyAuthor}{Auteur}
+Meunier Rodrigue Nicolas Lemoult Mathis Morisseau 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Le Mans Université 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{input_8h_aa2a70a0ba2b3d111d5088fe910487b29}\label{input_8h_aa2a70a0ba2b3d111d5088fe910487b29}} 
+\index{input.h@{input.h}!choix\_personnages@{choix\_personnages}}
+\index{choix\_personnages@{choix\_personnages}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{choix\_personnages()}{choix\_personnages()}}
+{\footnotesize\ttfamily int choix\+\_\+personnages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de savoir quel personnage chaque joueur va jouer. 
+
+\begin{DoxyReturn}{Renvoie}
+0 si abandon ou 1 si succès 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a27319d2b008bb66aca61479c2863a77f}\label{input_8h_a27319d2b008bb66aca61479c2863a77f}} 
+\index{input.h@{input.h}!choix\_serveur@{choix\_serveur}}
+\index{choix\_serveur@{choix\_serveur}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{choix\_serveur()}{choix\_serveur()}}
+{\footnotesize\ttfamily int choix\+\_\+serveur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de récupèrer l\textquotesingle{}ip du serveur sur lequel une éventuelle partie en réseau se déroulerais. 
+
+\begin{DoxyReturn}{Renvoie}
+0 si abandon ou 1 si succès 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_ad9af6809f0dc2a783e9143473989c151}\label{input_8h_ad9af6809f0dc2a783e9143473989c151}} 
+\index{input.h@{input.h}!input\_popup@{input\_popup}}
+\index{input\_popup@{input\_popup}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{input\_popup()}{input\_popup()}}
+{\footnotesize\ttfamily int input\+\_\+popup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette fonction gère l\textquotesingle{}entrée des événements de la popup d\textquotesingle{}erreur, dans le cas où une erreur survient (cf \+: \mbox{\hyperlink{init_8c_afa7521ae01d0558194aca05f49f8c81c}{quitter()}} -\/$>$ \mbox{\hyperlink{init_8c}{init.\+c}}) 
+
+\begin{DoxyReturn}{Renvoie}
+R\+E\+T\+O\+U\+R\+\_\+\+Q\+U\+I\+T\+T\+ER si l\textquotesingle{}utilisateur veut mettre fin au programme ou R\+E\+T\+O\+U\+R\+\_\+\+P\+O\+U\+R\+S\+U\+I\+V\+RE s\textquotesingle{}il souhaite poursuivre malgré l\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8h_a0ff46a1ca469b499977e3efe700b9147}\label{input_8h_a0ff46a1ca469b499977e3efe700b9147}} 
+\index{input.h@{input.h}!multijoueur@{multijoueur}}
+\index{multijoueur@{multijoueur}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{multijoueur()}{multijoueur()}}
+{\footnotesize\ttfamily int multijoueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Contrairement à campagne la fonction multijoueur permet de récupérer la façon dont une partie va se déroulé, elle permet également de savoir si une partie va se dérouler en réseau ou non. 
+
+\begin{DoxyReturn}{Renvoie}
+nombre\+\_\+joueurs (2/4) ou 0 si abandon 
+\end{DoxyReturn}

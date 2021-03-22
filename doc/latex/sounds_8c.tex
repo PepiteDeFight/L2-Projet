@@ -1,0 +1,63 @@
+\hypertarget{sounds_8c}{}\doxysection{Référence du fichier /mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/src/sounds.c}
+\label{sounds_8c}\index{/mnt/c/Users/Rod4401/Desktop/Project L2/src/sounds.c@{/mnt/c/Users/Rod4401/Desktop/Project L2/src/sounds.c}}
+
+
+Contient l\textquotesingle{}implémentation des fonctions en rapport avec la musique, la création des channels, le changement de volume etc.  
+
+
+{\ttfamily \#include \char`\"{}../include/sounds.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de sounds.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sounds_8c_acb373f7276274a75af2fc3ec23a8e266}\label{sounds_8c_acb373f7276274a75af2fc3ec23a8e266}} 
+void \mbox{\hyperlink{sounds_8c_acb373f7276274a75af2fc3ec23a8e266}{creation\+\_\+canaux\+\_\+musique}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction alloue des canaux de musiques pour pouvoir mettre plusieurs sons en même temps comme les effets des joueurs ma ùusique d\textquotesingle{}ambiance etc . . . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sounds_8c_ad9feffa34b3a9e6acffbd2e504f87761}{chargement\+\_\+musique}} (int channel, int extra, int rep)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de jouer une musique. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sounds_8c_ac1e851f578df2eeeac5ae470ad12dca9}\label{sounds_8c_ac1e851f578df2eeeac5ae470ad12dca9}} 
+void \mbox{\hyperlink{sounds_8c_ac1e851f578df2eeeac5ae470ad12dca9}{changement\+\_\+volumes\+\_\+musiques}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de changer les volumes des canaux de musiques. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sounds_8c_ae1be420df0fbe0140b790967a460e85f}\label{sounds_8c_ae1be420df0fbe0140b790967a460e85f}} 
+void \mbox{\hyperlink{sounds_8c_ae1be420df0fbe0140b790967a460e85f}{detruire\+\_\+musique}} (int extra)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de libérer la musique stocker dans le tableau jeu\+\_\+parametres.\+musiques\mbox{[}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Contient l\textquotesingle{}implémentation des fonctions en rapport avec la musique, la création des channels, le changement de volume etc. 
+
+\begin{DoxyAuthor}{Auteur}
+Meunier Rodrigue Nicolas Lemoult Mathis Morisseau 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Le Mans Université 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{sounds_8c_ad9feffa34b3a9e6acffbd2e504f87761}\label{sounds_8c_ad9feffa34b3a9e6acffbd2e504f87761}} 
+\index{sounds.c@{sounds.c}!chargement\_musique@{chargement\_musique}}
+\index{chargement\_musique@{chargement\_musique}!sounds.c@{sounds.c}}
+\doxysubsubsection{\texorpdfstring{chargement\_musique()}{chargement\_musique()}}
+{\footnotesize\ttfamily void chargement\+\_\+musique (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{int}]{extra,  }\item[{int}]{rep }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de jouer une musique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em channel} & Correspond au cannal de musique (0-\/$>$6) \\
+\hline
+{\em extra} & Indice dans le tableau jeu\+\_\+parametres.\+musiques\mbox{[}\mbox{]} correspondant à la musique voulu \\
+\hline
+{\em rep} & Correspond au nombre de répétitions (-\/1 -\/$>$ infini) \\
+\hline
+\end{DoxyParams}

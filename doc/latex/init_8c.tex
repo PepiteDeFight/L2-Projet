@@ -1,0 +1,79 @@
+\hypertarget{init_8c}{}\doxysection{Référence du fichier /mnt/c/\+Users/\+Rod4401/\+Desktop/\+Project L2/src/init.c}
+\label{init_8c}\index{/mnt/c/Users/Rod4401/Desktop/Project L2/src/init.c@{/mnt/c/Users/Rod4401/Desktop/Project L2/src/init.c}}
+
+
+Contient l\textquotesingle{}implémentation des fonctions d\textquotesingle{}initialisation, comme la police, les variables, les structures . . .  
+
+
+{\ttfamily \#include \char`\"{}../include/init.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de init.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{init_8c_ae10cc14a06e88c4de29b5eb8b066284f}\label{init_8c_ae10cc14a06e88c4de29b5eb8b066284f}} 
+void \mbox{\hyperlink{init_8c_ae10cc14a06e88c4de29b5eb8b066284f}{initialisation\+\_\+\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em La plupart des textures sont rechargées si elles sont à N\+U\+LL, Il faut donc les initialiser à N\+U\+LL pour les charger au moins une fois. Cette fonction met les textures en questions à N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{init_8c_a1f2b627c230f810f9f76c1d7bd71408d}\label{init_8c_a1f2b627c230f810f9f76c1d7bd71408d}} 
+void \mbox{\hyperlink{init_8c_a1f2b627c230f810f9f76c1d7bd71408d}{initialisation\+\_\+parametres}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}initialiser la plupart des structures et d\textquotesingle{}appeler les fonctions pour créer la fenetre, lancer l\textquotesingle{}écran de chargement et récupérer les parametres utilisateur comme les contrôles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{init_8c_a4d98d601277d905e42500625b3e13263}{chargement\+\_\+police}} (int taille)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de chnager la taille de la police (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ différentes tailles de police) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{init_8c_aebdb7b351152b7e01f115f198a2d39b0}\label{init_8c_aebdb7b351152b7e01f115f198a2d39b0}} 
+void \mbox{\hyperlink{init_8c_aebdb7b351152b7e01f115f198a2d39b0}{chargement\+\_\+parametres}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de sois crééer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{init_8c_a0736ac0410a8aa60f0146eed2339cd38}\label{init_8c_a0736ac0410a8aa60f0146eed2339cd38}} 
+void \mbox{\hyperlink{init_8c_a0736ac0410a8aa60f0146eed2339cd38}{sauvegarde\+\_\+parametres}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de sauvegarder les parametres utilisateur dans le fichier de sauvegarde. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{init_8c_afa7521ae01d0558194aca05f49f8c81c}{quitter}} (int code)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l\textquotesingle{}utilisateur de sois mettre fin au programme sois poursuivre malgré l\textquotesingle{}erreur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Contient l\textquotesingle{}implémentation des fonctions d\textquotesingle{}initialisation, comme la police, les variables, les structures . . . 
+
+\begin{DoxyAuthor}{Auteur}
+Meunier Rodrigue Nicolas Lemoult Mathis Morisseau 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Le Mans Université 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{init_8c_a4d98d601277d905e42500625b3e13263}\label{init_8c_a4d98d601277d905e42500625b3e13263}} 
+\index{init.c@{init.c}!chargement\_police@{chargement\_police}}
+\index{chargement\_police@{chargement\_police}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{chargement\_police()}{chargement\_police()}}
+{\footnotesize\ttfamily void chargement\+\_\+police (\begin{DoxyParamCaption}\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de chnager la taille de la police (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ différentes tailles de police) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille} & Correspond à la taille choisie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{init_8c_afa7521ae01d0558194aca05f49f8c81c}\label{init_8c_afa7521ae01d0558194aca05f49f8c81c}} 
+\index{init.c@{init.c}!quitter@{quitter}}
+\index{quitter@{quitter}!init.c@{init.c}}
+\doxysubsubsection{\texorpdfstring{quitter()}{quitter()}}
+{\footnotesize\ttfamily void quitter (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l\textquotesingle{}utilisateur de sois mettre fin au programme sois poursuivre malgré l\textquotesingle{}erreur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & Corrrespond au code d\textquotesingle{}erreur d\textquotesingle{}appel de la fonction (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ code d\textquotesingle{}erreurs) \\
+\hline
+\end{DoxyParams}
