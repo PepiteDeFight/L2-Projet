@@ -6,7 +6,7 @@
  * @date        2021
  * @copyright   Le Mans Université
  */
-#include "../include/actions.h"
+#include "../lib/actions.h"
 
 /**
  * \fn void pesanteur()

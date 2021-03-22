@@ -7,7 +7,7 @@
  * @copyright   Le Mans Université
  */
 
-#include "../include/draw.h"
+#include "../lib/draw.h"
 SDL_Color couleurBlanc  =   {255,255,255,255};
 SDL_Color couleurBleu   =   {0, 0, 255, 255};
 SDL_Color couleurOrange =   {255, 140, 40, 255};

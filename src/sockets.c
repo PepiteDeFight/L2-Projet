@@ -6,7 +6,7 @@
  * @date        2021
  * @copyright   Le Mans Université
  */
-#include "../include/sockets.h"
+#include "../lib/sockets.h"
 
 /**
  * \fn void initialisation_socket()

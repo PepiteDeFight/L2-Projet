@@ -6,7 +6,7 @@
  * @date        2021
  * @copyright   Le Mans Université
  */
-#include "../include/timer.h"
+#include "../lib/timer.h"
 
 /**
  * \fn void delay()

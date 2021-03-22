@@ -7,7 +7,7 @@
  * @copyright   Le Mans Université
  */
 
-#include "../include/struct.h"
+#include "../lib/struct.h"
 
 /**
  * \fn int main(int argc, char* argv[])

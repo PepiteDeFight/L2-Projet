@@ -6,7 +6,7 @@
  * @date        2021
  * @copyright   Le Mans Université
  */
-#include "../include/sounds.h"
+#include "../lib/sounds.h"
 
 
 /**

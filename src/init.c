@@ -6,7 +6,7 @@
  * @date        2021
  * @copyright   Le Mans Université
  */
-#include "../include/init.h"
+#include "../lib/init.h"
 
 /**
  * \fn void initialisation_Textures()

@@ -128,15 +128,15 @@
 		<Unit filename="SDL/include/SDL_vulkan.h" />
 		<Unit filename="SDL/include/begin_code.h" />
 		<Unit filename="SDL/include/close_code.h" />
-		<Unit filename="include/actions.h" />
-		<Unit filename="include/defs.h" />
-		<Unit filename="include/draw.h" />
-		<Unit filename="include/init.h" />
-		<Unit filename="include/input.h" />
-		<Unit filename="include/sockets.h" />
-		<Unit filename="include/sounds.h" />
-		<Unit filename="include/struct.h" />
-		<Unit filename="include/timer.h" />
+		<Unit filename="lib/actions.h" />
+		<Unit filename="lib/defs.h" />
+		<Unit filename="lib/draw.h" />
+		<Unit filename="lib/init.h" />
+		<Unit filename="lib/input.h" />
+		<Unit filename="lib/sockets.h" />
+		<Unit filename="lib/sounds.h" />
+		<Unit filename="lib/struct.h" />
+		<Unit filename="lib/timer.h" />
 		<Unit filename="src/actions.c">
 			<Option compilerVar="CC" />
 		</Unit>
