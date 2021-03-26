@@ -261,6 +261,7 @@ void menu_parametre()
 
                     break;
                 case PAGE_CONTROLES:
+
                     break;
 
 

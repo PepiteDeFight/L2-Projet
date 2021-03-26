@@ -1,14 +1,14 @@
 -GRAPHISMES-
 Mode : 0
-Resolution : 0
-Fps : 3
+Resolution : 1
+Fps : 2
 AfficherFps : 1
 -INTERFACE-
 Echelle : 75
 -AUDIO-
-Musique : 1
-Effets : 5
-Dialogues : 50
+Musique : 0
+Effets : 4
+Dialogues : 53
 ArrierePlan : 1
 -C-O-N-T-R-O-L-E-S-
 _JOUEUR1_

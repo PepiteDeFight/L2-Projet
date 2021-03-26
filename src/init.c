@@ -166,7 +166,7 @@ void write_all_varia()
     for(int i = 0; i < 4; i++)
     {
         fprintf(struct_jeu.debug, "Joueur %d : Vie : %d, Type de Personnage : %d, Evolution : %d, Direction : %d, Position X : %f, Position Y : %f, Modification : %d, Jump : %d\n\n",
-                struct_jeu.joueurs[i].vie, struct_jeu.joueurs[i].etat, struct_jeu.joueurs[i].evolution, struct_jeu.joueurs[i].direction, struct_jeu.joueurs[i].positionX, struct_jeu.joueurs[i].positionY, struct_jeu.joueurs[i].modification, struct_jeu.joueurs[i].jump);
+                i,struct_jeu.joueurs[i].vie, struct_jeu.joueurs[i].etat, struct_jeu.joueurs[i].evolution, struct_jeu.joueurs[i].direction, struct_jeu.joueurs[i].positionX, struct_jeu.joueurs[i].positionY, struct_jeu.joueurs[i].modification, struct_jeu.joueurs[i].jump);
     }
     fprintf(struct_jeu.debug, "Paramètre : Mode : %d, Resolution : %d, Fps : %d, AfficheFPS : %d\nPlageFPS[0] : %d, PlageFPS[1] : %d, PlageFPS[2] : %d, PlageFPS[3] : %d,  PlageFPS[4] : %d, PlageFPS[5] : %d\n",
             jeu_parametres.mode, jeu_parametres.resolution, jeu_parametres.fps, jeu_parametres.affichFPS, jeu_parametres.plageFPS[0], jeu_parametres.plageFPS[1], jeu_parametres.plageFPS[2], jeu_parametres.plageFPS[3], jeu_parametres.plageFPS[4], jeu_parametres.plageFPS[5]);
@@ -178,7 +178,7 @@ void write_all_varia()
         }
     }
     fprintf(struct_jeu.debug, "\n\nEchelle : %d, Musique : %d, Effets : %d, Dialogues : %d, Arrière Plan : %d\nJoueur 1 : Avancer : %d, Reculer : %d, Sauter : %d, Attaquer : %d\nJoueur 2 : Avancer : %d, Reculer : %d, Sauter : %d, Attaquer : %d\nJoueur 3 : Avancer : %d, Reculer : %d, Sauter : %d, Attaquer : %d\nJoueur 4 : Avancer : %d, Reculer : %d, Sauter : %d, Attaquer : %d\nPage : %d\n\n",
-            jeu_parametres.echelle, jeu_parametres.effets, jeu_parametres.dialogues, jeu_parametres.arriere_plan, jeu_parametres.avancer1, jeu_parametres.reculer1, jeu_parametres.sauter1, jeu_parametres.attaquer1, jeu_parametres.avancer2, jeu_parametres.reculer2, jeu_parametres.sauter2, jeu_parametres.attaquer2,jeu_parametres.avancer3, jeu_parametres.reculer3, jeu_parametres.sauter3, jeu_parametres.attaquer3,jeu_parametres.avancer4, jeu_parametres.reculer4, jeu_parametres.sauter4, jeu_parametres.attaquer4, jeu_parametres.page);
+            jeu_parametres.echelle,jeu_parametres.musique, jeu_parametres.effets, jeu_parametres.dialogues, jeu_parametres.arriere_plan, jeu_parametres.avancer1, jeu_parametres.reculer1, jeu_parametres.sauter1, jeu_parametres.attaquer1, jeu_parametres.avancer2, jeu_parametres.reculer2, jeu_parametres.sauter2, jeu_parametres.attaquer2,jeu_parametres.avancer3, jeu_parametres.reculer3, jeu_parametres.sauter3, jeu_parametres.attaquer3,jeu_parametres.avancer4, jeu_parametres.reculer4, jeu_parametres.sauter4, jeu_parametres.attaquer4, jeu_parametres.page);
 
     fprintf(struct_jeu.debug, "Choix Résolution : %d, Fréquence Vidéo : %d, FPS Moyen : %d, FPS Maximum : %d, FPS Minimum : %d\n",
             struct_jeu.choix_resolution, struct_jeu.frequence_video, struct_jeu.fpsMoy, struct_jeu.fpsMax, struct_jeu.fpsMin);
