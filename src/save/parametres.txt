@@ -17,17 +17,17 @@ Reculer : 115
 Sauter : : 32
 Attaquer : 1073742048
 _JOUEUR2_
-Avancer : 1073741906
-Reculer : 1073741905
+Avancer : 97
+Reculer : 32
 Sauter : : 0
 Attaquer : 0
 _JOUEUR3_
 Avancer : 0
-Reculer : 0
-Sauter : : 0
+Reculer : 32
+Sauter : 32
 Attaquer : 0
 _JOUEUR4_
 Avancer : 0
 Reculer : 0
-Sauter : : 0
+Sauter : 0
 Attaquer : 0

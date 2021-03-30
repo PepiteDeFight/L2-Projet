@@ -34,6 +34,7 @@ void afficher_ecran_multijoueur();
 void afficher_pause();
 void modifier_window();
 void affiche_choix_personnages(int *tab);
+void afficher_changement_control();
 
 
 

@@ -19,6 +19,7 @@ void partie();
 int choix_serveur();
 int choix_personnages();
 void jeu_pause();
+void changement_control(int etat, int joueur);
 
 
 

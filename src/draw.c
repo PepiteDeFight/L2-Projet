@@ -676,4 +676,19 @@ void affiche_choix_personnages(int *tab)
         SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.selecteur,NULL,&position);
     }
 }
-
+/**
+ * \fn void afficher_changement_control()
+ * \brief Cette fonction permet d'indiquer au joueur qu'il est sur le point de changer un de ses controles
+ */
+void afficher_changement_control(){
+    SDL_Surface *surf=SDL_GetWindowSurface(struct_jeu.fenetre_jeu);
+    SDL_Surface *newtouche=TTF_RenderText_Blended(struct_jeu.police,"Saisir votre nouvelle touche...",couleurBlanc);
+    SDL_Rect rect={0.3*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution],0.45*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution],300,300};
+    SDL_BlitSurface(newtouche,NULL,surf,&rect);
+    SDL_Texture *text=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
+    SDL_SetTextureAlphaMod(text,20);
+    SDL_RenderCopy(struct_jeu.rendu_fenetre,text,NULL,NULL);
+    rendre_affichage();
+    SDL_DestroyTexture(text);
+    SDL_FreeSurface(surf);
+}

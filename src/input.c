@@ -261,8 +261,27 @@ void menu_parametre()
 
                     break;
                 case PAGE_CONTROLES:
-
-                    break;
+                    //Avancer
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_AVANCER_J1 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_AVANCER_J1 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_AVANCER_J1 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_AVANCER_J1)changement_control(WALK,J1);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_AVANCER_J2 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_AVANCER_J2 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_AVANCER_J2 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_AVANCER_J2)changement_control(WALK,J2);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_AVANCER_J3 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_AVANCER_J3 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_AVANCER_J3 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_AVANCER_J3)changement_control(WALK,J3);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_AVANCER_J4 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_AVANCER_J4 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_AVANCER_J4 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_AVANCER_J4)changement_control(WALK,J4);
+//Reculer
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_RECULER_J1 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_RECULER_J1 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_RECULER_J1 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_RECULER_J1)changement_control(BACK,J1);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_RECULER_J2 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_RECULER_J2 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_RECULER_J2 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_RECULER_J2)changement_control(BACK,J2);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_RECULER_J3 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_RECULER_J3 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_RECULER_J3 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_RECULER_J3)changement_control(BACK,J3);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_RECULER_J4 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_RECULER_J4 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_RECULER_J4 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_RECULER_J4)changement_control(BACK,J4);
+//Sauter
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_SAUTER_J1 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_SAUTER_J1 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_SAUTER_J1 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_SAUTER_J1)changement_control(JUMP,J1);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_SAUTER_J2 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_SAUTER_J2 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_SAUTER_J2 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_SAUTER_J2)changement_control(JUMP,J2);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_SAUTER_J3 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_SAUTER_J3 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_SAUTER_J3 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_SAUTER_J3)changement_control(JUMP,J3);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_SAUTER_J4 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_SAUTER_J4 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_SAUTER_J4 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_SAUTER_J4)changement_control(JUMP,J4);
+//Attaquer
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_ATTAQUER_J1 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_ATTAQUER_J1 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_ATTAQUER_J1 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_ATTAQUER_J1)changement_control(ATTACK,J1);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_ATTAQUER_J2 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_ATTAQUER_J2 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_ATTAQUER_J2 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_ATTAQUER_J2)changement_control(ATTACK,J2);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_ATTAQUER_J3 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_ATTAQUER_J3 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_ATTAQUER_J3 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_ATTAQUER_J3)changement_control(ATTACK,J3);
+if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_ATTAQUER_J4 && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_ATTAQUER_J4 && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_ATTAQUER_J4 && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_ATTAQUER_J4)changement_control(ATTACK,J4);
+break;
 
 
                 }
@@ -419,109 +438,109 @@ void partie()
                 quitter(QUITTER);
                 break;
             case SDL_KEYDOWN:
-                if(event.key.keysym.sym == jeu_parametres.avancer1)struct_jeu.tableau_event[J1][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.avancer2)struct_jeu.tableau_event[J2][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.avancer3)struct_jeu.tableau_event[J3][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.avancer4)struct_jeu.tableau_event[J4][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][0])struct_jeu.tableau_event[J1][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][0])struct_jeu.tableau_event[J2][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][0])struct_jeu.tableau_event[J3][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][0])struct_jeu.tableau_event[J4][0]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.reculer1)struct_jeu.tableau_event[J1][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.reculer2)struct_jeu.tableau_event[J2][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.reculer3)struct_jeu.tableau_event[J3][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.reculer4)struct_jeu.tableau_event[J4][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][1])struct_jeu.tableau_event[J1][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][1])struct_jeu.tableau_event[J2][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][1])struct_jeu.tableau_event[J3][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][1])struct_jeu.tableau_event[J4][1]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.sauter1)struct_jeu.tableau_event[J1][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.sauter2)struct_jeu.tableau_event[J2][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.sauter3)struct_jeu.tableau_event[J3][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.sauter4)struct_jeu.tableau_event[J4][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][2])struct_jeu.tableau_event[J1][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][2])struct_jeu.tableau_event[J2][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][2])struct_jeu.tableau_event[J3][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][2])struct_jeu.tableau_event[J4][2]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.attaquer1)struct_jeu.tableau_event[J1][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.attaquer2)struct_jeu.tableau_event[J2][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.attaquer3)struct_jeu.tableau_event[J3][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.attaquer4)struct_jeu.tableau_event[J4][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][3])struct_jeu.tableau_event[J1][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][3])struct_jeu.tableau_event[J2][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][3])struct_jeu.tableau_event[J3][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][3])struct_jeu.tableau_event[J4][3]=SDL_TRUE;
 
 
                 if(event.key.keysym.sym == SDLK_ESCAPE)jeu_pause();
                 break;
             case SDL_KEYUP:
-                if(event.key.keysym.sym == jeu_parametres.avancer1)
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][0])
                 {
                     struct_jeu.joueurs[J1].modification=0;
                     struct_jeu.tableau_event[J1][0]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][0])
                 {
                     struct_jeu.joueurs[J2].modification=0;
                     struct_jeu.tableau_event[J2][0]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer3)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][0])
                 {
                     struct_jeu.joueurs[J3].modification=0;
                     struct_jeu.tableau_event[J3][0]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][0])
                 {
                     struct_jeu.joueurs[J4].modification=0;
                     struct_jeu.tableau_event[J4][0]=SDL_FALSE;
                 }
 
-                if(event.key.keysym.sym == jeu_parametres.reculer1)
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][1])
                 {
                     struct_jeu.joueurs[J1].modification=0;
                     struct_jeu.tableau_event[J1][1]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][1])
                 {
                     struct_jeu.joueurs[J2].modification=0;
                     struct_jeu.tableau_event[J2][1]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer3)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][1])
                 {
                     struct_jeu.joueurs[J3].modification=0;
                     struct_jeu.tableau_event[J3][1]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][1])
                 {
                     struct_jeu.joueurs[J4].modification=0;
                     struct_jeu.tableau_event[J4][1]=SDL_FALSE;
                 }
 
-                if(event.key.keysym.sym == jeu_parametres.sauter1)
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][2])
                 {
                     struct_jeu.joueurs[J1].modification=0;
                     struct_jeu.tableau_event[J1][2]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.sauter2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][2])
                 {
                     struct_jeu.joueurs[J2].modification=0;
                     struct_jeu.tableau_event[J2][2]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.sauter3)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][2])
                 {
                     struct_jeu.joueurs[J3].modification=0;
                     struct_jeu.tableau_event[J3][2]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.sauter4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][2])
                 {
                     struct_jeu.joueurs[J4].modification=0;
                     struct_jeu.tableau_event[J4][2]=SDL_FALSE;
                 }
 
-                if(event.key.keysym.sym == jeu_parametres.attaquer1)
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][3])
                 {
                     struct_jeu.joueurs[J1].modification=0;
                     struct_jeu.tableau_event[J1][3]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.attaquer2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][3])
                 {
                     struct_jeu.joueurs[J2].modification=0;
                     struct_jeu.tableau_event[J2][3]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.attaquer3)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][3])
                 {
                     struct_jeu.joueurs[J3].modification=0;
                     struct_jeu.tableau_event[J3][3]=SDL_FALSE;
                 }
-                if(event.key.keysym.sym == jeu_parametres.attaquer4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][3])
                 {
                     struct_jeu.joueurs[J4].modification=0;
                     struct_jeu.tableau_event[J4][3]=SDL_FALSE;
@@ -594,36 +613,36 @@ int choix_personnages()
                 quitter(QUITTER);
                 break;
             case SDL_KEYDOWN:
-                if(event.key.keysym.sym == jeu_parametres.avancer1 )
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][0] )
                 {
                     if(tab_coords_selecteur[J1] <11)tab_coords_selecteur[J1]++;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][0])
                 {
                     if(tab_coords_selecteur[J2] <11)tab_coords_selecteur[J2]++;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer3 && struct_jeu.nombre_joueurs==4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][0] && struct_jeu.nombre_joueurs==4)
                 {
                     if(tab_coords_selecteur[J3] <11)tab_coords_selecteur[J3]++;
                 }
-                if(event.key.keysym.sym == jeu_parametres.avancer4 && struct_jeu.nombre_joueurs==4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][0] && struct_jeu.nombre_joueurs==4)
                 {
                     if(tab_coords_selecteur[J4] <11)tab_coords_selecteur[J4]++;
                 }
 
-                if(event.key.keysym.sym == jeu_parametres.reculer1)
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][1])
                 {
                     if(tab_coords_selecteur[J1] >0)tab_coords_selecteur[J1]--;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer2)
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][1])
                 {
                     if(tab_coords_selecteur[J2] >0)tab_coords_selecteur[J2]--;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer3 && struct_jeu.nombre_joueurs==4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][1] && struct_jeu.nombre_joueurs==4)
                 {
                     if(tab_coords_selecteur[J3] >0)tab_coords_selecteur[J3]--;
                 }
-                if(event.key.keysym.sym == jeu_parametres.reculer4 && struct_jeu.nombre_joueurs==4)
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][1] && struct_jeu.nombre_joueurs==4)
                 {
                     if(tab_coords_selecteur[J4] >0)tab_coords_selecteur[J4]--;
                 }
@@ -699,3 +718,14 @@ void jeu_pause()
         }
     }
 }
+
+/**
+ *\fn void changement_control(int etat, int joueur)
+ *\brief Cette fonction permet le changement des controles dans les paramêtres
+ */
+void changement_control(int etat, int joueur){
+     afficher_changement_control();
+     SDL_Event event;
+     while(event.type!=SDL_KEYDOWN)SDL_WaitEvent(&event);
+     jeu_parametres.controles[joueur][etat]=event.key.keysym.sym;
+ }

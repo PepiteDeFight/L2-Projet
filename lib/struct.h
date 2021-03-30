@@ -69,35 +69,12 @@ typedef struct
 
 
     //C-O-N-T-R-O-L-E-S
-    //JOUEUR 1
-
-    int avancer1;
-    int reculer1;
-    int sauter1;
-    int attaquer1;
-
-    //JOUEUR 2
-    int avancer2;
-    int reculer2;
-    int sauter2;
-    int attaquer2;
-
-    //JOUEUR 3
-    int avancer3;
-    int reculer3;
-    int sauter3;
-    int attaquer3;
-
-    //JOUEUR 4
-    int avancer4;
-    int reculer4;
-    int sauter4;
-    int attaquer4;
-    //JOYSTICKS/MANETTES
-    SDL_Joystick* JOY0;
-    SDL_Joystick* JOY1;
-    SDL_Joystick* JOY2;
-    SDL_Joystick* JOY3;
+    int controles[4][4];
+    /* J1 : Avancer - reculer - sauter - attaquer
+     * J2 : Avancer - reculer - sauter - attaquer
+     * J3 : Avancer - reculer - sauter - attaquer
+     * J4 : Avancer - reculer - sauter - attaquer
+     */
 
     //T-E-X-U-R-E-S
     SDL_Texture *tabMenu[3];
