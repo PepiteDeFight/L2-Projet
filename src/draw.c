@@ -145,7 +145,7 @@ void chargerTextures()
     {
         surf=IMG_Load(chaine);
         if(surf == NULL)quitter(SDL_IMAGE);
-        chaine[9]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
+        chaine[12]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
         jeu_parametres.tabMenu[i]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
         SDL_FreeSurface(surf);
     }
@@ -157,7 +157,7 @@ void chargerTextures()
     strcpy(chaine,SRC_IMG_JEU);
     for(int i=0; i<NB_IMG_FOND; i++)
     {
-        chaine[17]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
+        chaine[20]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
         surf=IMG_Load(chaine);
         if(surf == NULL)quitter(SDL_IMAGE);
         struct_jeu.textures_fond_jeu[i]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
@@ -172,7 +172,7 @@ void chargerTextures()
     {
         surf=IMG_Load(chaine);
         if(surf == NULL)quitter(SDL_IMAGE);
-        chaine[20]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
+        chaine[23]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
         struct_jeu.textures_plateau_jeu[i-1]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
         SDL_FreeSurface(surf);
     }
@@ -216,12 +216,12 @@ void creation_textures_personnage()
         case CHEVALIER:
             chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_CHEVALIER));
             strcpy(chaine,SRC_IMG_PERSONNAGE_CHEVALIER);
-            chaine[26]='0'+((struct_jeu.joueurs[i].type_personnage)%10);
+            chaine[29]='0'+((struct_jeu.joueurs[i].type_personnage)%10);
             for(int y=0; y<6; y++)
                 for(int z=0; z<10; z++)
                 {
-                    chaine[28]='0'+y;
-                    chaine[30]='0'+z;
+                    chaine[31]='0'+y;
+                    chaine[33]='0'+z;
                     surf=IMG_Load(chaine);
                     if(surf==NULL)quitter(SDL_IMAGE);
                     struct_jeu.textures_personnages_joueurs[i][y][z]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
@@ -231,12 +231,12 @@ void creation_textures_personnage()
         case ELFE:
             chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_ELFE));
             strcpy(chaine,SRC_IMG_PERSONNAGE_ELFE);
-            chaine[21]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
+            chaine[24]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
             for(int y=0; y<6; y++)
                 for(int z=0; z<10; z++)
                 {
-                    chaine[23]='0'+y;
-                    chaine[25]='0'+z;
+                    chaine[26]='0'+y;
+                    chaine[28]='0'+z;
                     surf=IMG_Load(chaine);
                     if(surf==NULL)quitter(SDL_IMAGE);
                     struct_jeu.textures_personnages_joueurs[i][y][z]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
@@ -246,7 +246,7 @@ void creation_textures_personnage()
             {
                 free(chaine);
                 chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_ELFE_FLECHE));
-                chaine[22]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
+                chaine[25]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
                 surf=IMG_Load(chaine);
                 if(surf != NULL)
                 {
@@ -260,12 +260,12 @@ void creation_textures_personnage()
         case FEE:
             chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_FEE));
             strcpy(chaine,SRC_IMG_PERSONNAGE_FEE);
-            chaine[20]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
+            chaine[23]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
             for(int y=0; y<6; y++)
                 for(int z=0; z<10; z++)
                 {
-                    chaine[22]='0'+y;
-                    chaine[24]='0'+z;
+                    chaine[25]='0'+y;
+                    chaine[27]='0'+z;
                     surf=IMG_Load(chaine);
                     if(surf==NULL)quitter(SDL_IMAGE);
                     struct_jeu.textures_personnages_joueurs[i][y][z]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
@@ -273,7 +273,7 @@ void creation_textures_personnage()
                 }
             free(chaine);
             chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_FEE_FLECHE));
-            chaine[20]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
+            chaine[23]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
             surf=IMG_Load(chaine);
             if(surf != NULL)
             {
@@ -285,12 +285,12 @@ void creation_textures_personnage()
         case WARRIOR:
             chaine=malloc(sizeof(char)*strlen(SRC_IMG_PERSONNAGE_WARRIOR));
             strcpy(chaine,SRC_IMG_PERSONNAGE_WARRIOR);
-            chaine[24]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
+            chaine[27]='0'+(struct_jeu.joueurs[i].type_personnage)%10;
             for(int y=0; y<6; y++)
                 for(int z=0; z<10; z++)
                 {
-                    chaine[26]='0'+y;
-                    chaine[28]='0'+z;
+                    chaine[29]='0'+y;
+                    chaine[31]='0'+z;
                     surf=IMG_Load(chaine);
                     if(surf==NULL)quitter(SDL_IMAGE);
                     struct_jeu.textures_personnages_joueurs[i][y][z]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
