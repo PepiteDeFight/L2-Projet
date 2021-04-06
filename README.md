@@ -40,7 +40,7 @@ Partie de nicolas pour l'installation
 ## Development
 Nous avons décidé d'organiser les fonctions dans différents fichiers permettant de repérer chaque fonctions dans chaque fichiers. 
 Sur ce lien vous pouvez voir un schema représentant l'organisation des fichiers:
-
+![Inclusions des fichiers](https://github.com/PepiteDeFight/L2-Projet/blob/main/img/liens_entre_les_fichiers.png)
 
 Maintenant une bref présentation de chaque module (groupe de fonctions).
 Pour commencer, vous pouvez voir que tous les fichiers.c sauf le main incluent leur equivalent en ".h", chaque ".h" incluent struct.h qui est le fichier des structures globales. Et pour finir struct.h inclue defs.h qui est le fichier "maitre" qui possède toutes les déclarations et les définitions permettant à chaque fichiers d'accéder à n'importe quelles fonctions.
@@ -53,7 +53,6 @@ Pour commencer, vous pouvez voir que tous les fichiers.c sauf le main incluent l
 - Images libres de droits
 - [Gant](https://docs.google.com/spreadsheets/d/1ipVHrZPP3kiP_FIxAHCDkyyDFsxZtWTpcSuICjUDaMI/edit#gid=0) 
 - Code déjà compilé sous [github](https://github.com/PepiteDeFight/L2-Projet)
-- 
 
 
 Ce projet est pour nous une grande réussite. Il est le fruit d'un travail acharné et méthodique.
