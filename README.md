@@ -50,11 +50,10 @@ Partie de zopiik
 - Code déjà compilé sous [github](https://github.com/PepiteDeFight/L2-Projet)
 
 
-> Ce projet est pour nous une grande réussite.
-> Il est le fruit d'un travail acharné
-> et méthodique. Comme dirait Einstein
+Ce projet est pour nous une grande réussite. Il est le fruit d'un travail acharné et méthodique.
 > “La vie, c’est comme une bicyclette,
 > il faut avancer pour ne pas perdre l’équilibre.”
+> A.Einstein
 
 Nous souaitons remercier l'ensemble du personnel enseignant pour nous 
 avoir aider dans ce projet.
