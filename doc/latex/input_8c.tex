@@ -32,14 +32,23 @@ int \mbox{\hyperlink{input_8c_a27319d2b008bb66aca61479c2863a77f}{choix\+\_\+serv
 int \mbox{\hyperlink{input_8c_aa2a70a0ba2b3d111d5088fe910487b29}{choix\+\_\+personnages}} ()
 \begin{DoxyCompactList}\small\item\em Cette fonction permet de savoir quel personnage chaque joueur va jouer. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{input_8c_acb4ad145eae60f86b6b310e57f7d6bf5}\label{input_8c_acb4ad145eae60f86b6b310e57f7d6bf5}} 
-int {\bfseries choix\+\_\+plateau} ()
-\item 
+int \mbox{\hyperlink{input_8c_acb4ad145eae60f86b6b310e57f7d6bf5}{choix\+\_\+plateau}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction récupère les informations inputs pour le choix du plateau. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}\label{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}} 
 void \mbox{\hyperlink{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}{jeu\+\_\+pause}} ()
 \begin{DoxyCompactList}\small\item\em Cette fonction permet de faire une pause tant que l\textquotesingle{}utilisateur n\textquotesingle{}a pas appuyer sur echape, elle n\textquotesingle{}est pas dans \mbox{\hyperlink{timer_8c}{timer.\+c}} car elle n\textquotesingle{}agit pas directement sur le temps, elle fait une sorte de boucle sans changer l\textquotesingle{}affichage. Ps\+: disponible uniquement en local. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{input_8c_a94edf5f581e54460968f6d3841768699}\label{input_8c_a94edf5f581e54460968f6d3841768699}} 
 void \mbox{\hyperlink{input_8c_a94edf5f581e54460968f6d3841768699}{changement\+\_\+control}} (int control, int joueur)
-\begin{DoxyCompactList}\small\item\em Cette fonction permet le changement des controles dans les paramêtres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cette fonction permet le changement des controles dans les paramêtres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8c_ac7905e51eafe5bc41ffeb0bbd5d48a5d}\label{input_8c_ac7905e51eafe5bc41ffeb0bbd5d48a5d}} 
+void \mbox{\hyperlink{input_8c_ac7905e51eafe5bc41ffeb0bbd5d48a5d}{ignorer\+\_\+event}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction a pour but d\textquotesingle{}ignorer les evenements permettant à une page de ne pas planter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8c_a1f13b0bd90da2dabdef8117296cb3648}\label{input_8c_a1f13b0bd90da2dabdef8117296cb3648}} 
+void \mbox{\hyperlink{input_8c_a1f13b0bd90da2dabdef8117296cb3648}{retablir\+\_\+event}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction rétabli la lecture des évenements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8c_a0aa946f9fffedf1f744fb3e014ae3c72}\label{input_8c_a0aa946f9fffedf1f744fb3e014ae3c72}} 
+void {\bfseries victoire} (int equipe)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}

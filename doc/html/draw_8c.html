@@ -102,8 +102,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#a5c80a45e6639bc14aea7ea2f8d320658">decharger_Texture</a> (SDL_Texture **texture)</td></tr>
 <tr class="memdesc:a5c80a45e6639bc14aea7ea2f8d320658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour éviter d'avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup trop élévée, le programme va décharger les textures, cette fonction décharge la texture qui lui est passée. <br /></td></tr>
 <tr class="separator:a5c80a45e6639bc14aea7ea2f8d320658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">creation_textures_personnage</a> ()</td></tr>
-<tr class="memdesc:a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction créer les textures en fonction du choix du joueur sur son personnage.  <a href="draw_8c.html#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><td class="memItemLeft" align="right" valign="top"><a id="a7f4ca1a6d0bdbf0a46d114deac6e6ce5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">creation_textures_personnage</a> ()</td></tr>
+<tr class="memdesc:a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction créer les textures en fonction du choix du joueur sur son personnage. <br /></td></tr>
 <tr class="separator:a7f4ca1a6d0bdbf0a46d114deac6e6ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72da57fc7d9d206452956ae32e0c2e8"><td class="memItemLeft" align="right" valign="top"><a id="ad72da57fc7d9d206452956ae32e0c2e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#ad72da57fc7d9d206452956ae32e0c2e8">destruction_textures_personnage</a> ()</td></tr>
@@ -172,6 +173,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#ae948e63fd2de2d9c6e0955c1ce31ee35">afficher_changement_control</a> ()</td></tr>
 <tr class="memdesc:ae948e63fd2de2d9c6e0955c1ce31ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet d'indiquer au joueur qu'il est sur le point de changer un de ses controles. <br /></td></tr>
 <tr class="separator:ae948e63fd2de2d9c6e0955c1ce31ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dc38341a3b77ebf35623d5d4d33eb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#a31dc38341a3b77ebf35623d5d4d33eb6">afficher_victoire</a> (int equipe)</td></tr>
+<tr class="memdesc:a31dc38341a3b77ebf35623d5d4d33eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction affiche la carte de victoire de l'équipe gagante.  <a href="draw_8c.html#a31dc38341a3b77ebf35623d5d4d33eb6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a31dc38341a3b77ebf35623d5d4d33eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaeb880bc58ec6b846861243d6bcbb13"><td class="memItemLeft" align="right" valign="top"><a id="acaeb880bc58ec6b846861243d6bcbb13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#acaeb880bc58ec6b846861243d6bcbb13">afficher_choix_plateau</a> ()</td></tr>
+<tr class="memdesc:acaeb880bc58ec6b846861243d6bcbb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet d'afficher le retour acctuel sur le choix du plateau pour une future partie. <br /></td></tr>
+<tr class="separator:acaeb880bc58ec6b846861243d6bcbb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -215,6 +223,32 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>tab_rapport_co
 <dl class="section date"><dt>Date</dt><dd>2021 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Le Mans Université </dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a31dc38341a3b77ebf35623d5d4d33eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dc38341a3b77ebf35623d5d4d33eb6">&#9670;&nbsp;</a></span>afficher_victoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficher_victoire </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>equipe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cette fonction affiche la carte de victoire de l'équipe gagante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">equipe</td><td>vaut 1 si c'est l'équipe 1 ou 2 si c'est l'équipe 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a30974d481bc73f2982defef738c2dfd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30974d481bc73f2982defef738c2dfd0">&#9670;&nbsp;</a></span>creation_popup_erreur()</h2>
 
@@ -239,31 +273,6 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>tab_rapport_co
   </dd>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>1 si l'utilisateur souhaite poursuivre malgré l'erreur ou 0 si arret </dd></dl>
-
-</div>
-</div>
-<a id="a7f4ca1a6d0bdbf0a46d114deac6e6ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4ca1a6d0bdbf0a46d114deac6e6ce5">&#9670;&nbsp;</a></span>creation_textures_personnage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void creation_textures_personnage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cette fonction créer les textures en fonction du choix du joueur sur son personnage. </p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">1</td><td>si on ne veut charger que les textures idle pour choix personnage </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

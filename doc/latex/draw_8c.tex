@@ -23,6 +23,7 @@ void \mbox{\hyperlink{draw_8c_a3ae0debfa94f3a243a8f78f19943964a}{recharger\+\_\+
 \mbox{\Hypertarget{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}\label{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}} 
 void \mbox{\hyperlink{draw_8c_a5c80a45e6639bc14aea7ea2f8d320658}{decharger\+\_\+\+Texture}} (S\+D\+L\+\_\+\+Texture $\ast$$\ast$texture)
 \begin{DoxyCompactList}\small\item\em Pour éviter d\textquotesingle{}avoir à un instant T toutes les textures de chargée et une utilisation Ram beaucoup trop élévée, le programme va décharger les textures, cette fonction décharge la texture qui lui est passée. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}\label{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}} 
 void \mbox{\hyperlink{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}{creation\+\_\+textures\+\_\+personnage}} ()
 \begin{DoxyCompactList}\small\item\em Cette fonction créer les textures en fonction du choix du joueur sur son personnage. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{draw_8c_ad72da57fc7d9d206452956ae32e0c2e8}\label{draw_8c_ad72da57fc7d9d206452956ae32e0c2e8}} 
@@ -74,7 +75,12 @@ void \mbox{\hyperlink{draw_8c_af471b7e1463082cd616711b1dc8050e8}{affiche\+\_\+ch
 \begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher le selecteur qui rend compte de quels personnages les joueurs sont ammenés à jouer. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}\label{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}} 
 void \mbox{\hyperlink{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}{afficher\+\_\+changement\+\_\+control}} ()
-\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}indiquer au joueur qu\textquotesingle{}il est sur le point de changer un de ses controles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}indiquer au joueur qu\textquotesingle{}il est sur le point de changer un de ses controles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8c_a31dc38341a3b77ebf35623d5d4d33eb6}{afficher\+\_\+victoire}} (int equipe)
+\begin{DoxyCompactList}\small\item\em Cette fonction affiche la carte de victoire de l\textquotesingle{}équipe gagante. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_acaeb880bc58ec6b846861243d6bcbb13}\label{draw_8c_acaeb880bc58ec6b846861243d6bcbb13}} 
+void \mbox{\hyperlink{draw_8c_acaeb880bc58ec6b846861243d6bcbb13}{afficher\+\_\+choix\+\_\+plateau}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher le retour acctuel sur le choix du plateau pour une future partie. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -130,6 +136,21 @@ Le Mans Université
 
 
 \doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{draw_8c_a31dc38341a3b77ebf35623d5d4d33eb6}\label{draw_8c_a31dc38341a3b77ebf35623d5d4d33eb6}} 
+\index{draw.c@{draw.c}!afficher\_victoire@{afficher\_victoire}}
+\index{afficher\_victoire@{afficher\_victoire}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{afficher\_victoire()}{afficher\_victoire()}}
+{\footnotesize\ttfamily void afficher\+\_\+victoire (\begin{DoxyParamCaption}\item[{int}]{equipe }\end{DoxyParamCaption})}
+
+
+
+Cette fonction affiche la carte de victoire de l\textquotesingle{}équipe gagante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em equipe} & vaut 1 si c\textquotesingle{}est l\textquotesingle{}équipe 1 ou 2 si c\textquotesingle{}est l\textquotesingle{}équipe 2 \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{draw_8c_a30974d481bc73f2982defef738c2dfd0}\label{draw_8c_a30974d481bc73f2982defef738c2dfd0}} 
 \index{draw.c@{draw.c}!creation\_popup\_erreur@{creation\_popup\_erreur}}
 \index{creation\_popup\_erreur@{creation\_popup\_erreur}!draw.c@{draw.c}}
@@ -148,21 +169,6 @@ Cette fonction affiche une popup en cas d\textquotesingle{}erreur avec écrit le
 \begin{DoxyReturn}{Renvoie}
 1 si l\textquotesingle{}utilisateur souhaite poursuivre malgré l\textquotesingle{}erreur ou 0 si arret 
 \end{DoxyReturn}
-\mbox{\Hypertarget{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}\label{draw_8c_a7f4ca1a6d0bdbf0a46d114deac6e6ce5}} 
-\index{draw.c@{draw.c}!creation\_textures\_personnage@{creation\_textures\_personnage}}
-\index{creation\_textures\_personnage@{creation\_textures\_personnage}!draw.c@{draw.c}}
-\doxysubsubsection{\texorpdfstring{creation\_textures\_personnage()}{creation\_textures\_personnage()}}
-{\footnotesize\ttfamily void creation\+\_\+textures\+\_\+personnage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Cette fonction créer les textures en fonction du choix du joueur sur son personnage. 
-
-
-\begin{DoxyParams}{Paramètres}
-{\em 1} & si on ne veut charger que les textures idle pour choix personnage \\
-\hline
-\end{DoxyParams}
 
 
 \doxysubsection{Documentation des variables}
