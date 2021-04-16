@@ -44,6 +44,29 @@ Sur ce lien vous pouvez voir un schema représentant l'organisation des fichiers
 
 Maintenant une bref présentation de chaque module (groupe de fonctions).
 Pour commencer, vous pouvez voir que tous les fichiers.c sauf le main incluent leur equivalent en ".h", chaque ".h" incluent struct.h qui est le fichier des structures globales. Et pour finir struct.h inclue defs.h qui est le fichier "maitre" qui possède toutes les déclarations et les définitions permettant à chaque fichiers d'accéder à n'importe quelles fonctions.
+
+### defs.h
+    Ce fichier comme indiqué précedement contient l'ensemble des inclusions.
+On peut retrouver toutes les librairies externes incluses comme:
+    - [SDL.h](https://github.com/PepiteDeFight/L2-Projet/blob/main/SDL/include/SDL.h)
+    - [SDL_image](https://github.com/PepiteDeFight/L2-Projet/blob/main/SDL/include/SDL.h)
+    - [SDL_ttf](https://github.com/PepiteDeFight/L2-Projet/blob/main/SDL/include/SDL.h)
+    - [SDL_Mixer.h](https://github.com/PepiteDeFight/L2-Projet/blob/main/SDL/include/SDL.h)
+Il contient également les définitions permettant une meilleure clartée de code.
+Petite particularité pour ce [fichier](https://github.com/PepiteDeFight/L2-Projet/blob/main/lib/defs.h) il possède une commande de préprocesseur de plus par rapport aux autres, c'est-à-dire :
+
+    #ifdef _WIN32
+    #include <winsock2.h>
+    #include <winsock.h>
+    #include <windows.h>
+    #else
+    #include <netdb.h>
+    #include <netinet/in.h>
+    #include <sys/socket.h>
+    #include <arpa/inet.h>
+    #endif
+Cela permet une flexibilité du code, avec ces commandes on peut compiler le code sur windows et sur linux sans devoir changer quoi que ce soit.
+
 *********************
 *********************
 ## Divers
