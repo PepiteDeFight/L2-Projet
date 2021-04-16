@@ -165,14 +165,14 @@ void chargerTextures()
     }
     free(chaine);
 
-    //Cr�ation textures du plateau du jeu
+    //Creation textures du plateau du jeu
     chaine=malloc(strlen(SRC_IMG_PLATEAU)*sizeof(char));
     strcpy(chaine,SRC_IMG_PLATEAU);
     for(int i=1; i<NB_IMG_PLATEAU+1; i++)
     {
         surf=IMG_Load(chaine);
         if(surf == NULL)quitter(SDL_IMAGE);
-        chaine[23]++;// cette ligne permet d'incr�menter le num�ro de l'image '1'.png
+        chaine[23]++;// cette ligne permet d'incr�menter le numero de l'image '1'.png
         struct_jeu.textures_plateau_jeu[i-1]=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
         SDL_FreeSurface(surf);
     }
@@ -203,8 +203,7 @@ void decharger_Texture(SDL_Texture **texture)
 /**
  * \fn void creation_textures_personnage()
  * \brief Cette fonction créer les textures en fonction du choix du joueur sur son personnage
- * \param 1 si on ne veut charger que les textures idle pour choix personnage
-*/
+ */
 void creation_textures_personnage()
 {
     SDL_Surface *surf=NULL;
@@ -390,6 +389,7 @@ int creation_popup_erreur(char texte[30])
 */
 void chargement_demarrage()
 {
+    ignorer_event();
     SDL_RenderClear(struct_jeu.rendu_fenetre);
     SDL_Texture *texture_fond;
     SDL_Surface *surface=SDL_CreateRGBSurface(0, 1920, 1080, 32, 0,0,0,0);
@@ -426,10 +426,12 @@ void chargement_demarrage()
         rendre_affichage();
         SDL_Delay(FRAME_RATE_INTRO);
     }
+
     SDL_FreeSurface(surface);
     SDL_FreeSurface(text1);
     SDL_FreeSurface(text2);
     SDL_DestroyTexture(texture_fond);
+    retablir_event();
 }
 
 /**
@@ -438,6 +440,7 @@ void chargement_demarrage()
 */
 void transition_visuelle()
 {
+    ignorer_event();
     SDL_Surface *surface=SDL_GetWindowSurface(struct_jeu.fenetre_jeu);
     if(surface==NULL)quitter(SDL_BASE);
     SDL_DestroyTexture(struct_jeu.transition);
@@ -451,6 +454,7 @@ void transition_visuelle()
         SDL_RenderPresent(struct_jeu.rendu_fenetre);
         SDL_Delay(FRAME_TRANSITION);
     }
+    retablir_event();
 }
 
 /**
@@ -537,16 +541,7 @@ void afficher_details_parametres()
 
 
         break;
-    /*
-    case PAGE_PLATEAU:
-    Rectangle.x=XRAPPORT_APERCU_PLAT*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution];
-    Rectangle.y=YRAPPORT_APERCU_PLAT*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution];
-    Rectangle.h=4+HRAPPORT_APERCU_PLAT*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution];
-    Rectangle.w=2+LRAPPORT_APERCU_PLAT*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution];
-    SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.textures_fond_jeu[struct_jeu.texture_plateau_jeu_selectione],NULL,&Rectangle);
-    SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.textures_plateau_jeu[struct_jeu.texture_plateau_jeu_selectione],NULL,&Rectangle);
-    break;
-    */
+
     case PAGE_AUDIO:
         //pour la musique
         Rectangle.x=1+XRAPPORT_CUR_MUS*1920;
@@ -1050,10 +1045,10 @@ void affiche_choix_personnages(int *tab)
  */
 void afficher_changement_control()
 {
-    SDL_Surface *surf=SDL_GetWindowSurface(struct_jeu.fenetre_jeu);
+    SDL_Surface *surf=SDL_CreateRGBSurface(0, 1920, 1080, 32, 0, 0, 0, 0xFF000000);
     chargement_police(TAILLE_POLICE_T4);
     SDL_Surface *newtouche=TTF_RenderText_Blended(struct_jeu.police,"Saisir votre nouvelle touche...",couleurBlanc);
-    SDL_Rect rect= {0.3*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution],0.45*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution],300,300};
+    SDL_Rect rect= {0.3*1920,0.45*1080,300,300};
     SDL_BlitSurface(newtouche,NULL,surf,&rect);
     SDL_Texture *text=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
     SDL_SetTextureAlphaMod(text,20);
@@ -1062,4 +1057,40 @@ void afficher_changement_control()
     SDL_DestroyTexture(text);
     SDL_FreeSurface(surf);
     SDL_FreeSurface(newtouche);
+    SDL_RenderClear(struct_jeu.rendu_fenetre);
+}
+
+
+/**
+ * \fn void afficher_victoire(int equipe)
+ * \brief Cette fonction affiche la carte de victoire de l'équipe gagante
+ * \param equipe vaut 1 si c'est l'équipe 1 ou 2 si c'est l'équipe 2
+ */
+void afficher_victoire(int equipe)
+{
+    SDL_Surface *surf;
+    if(equipe ==1)surf=IMG_Load(SRC_IMG_VIC1);
+    else surf=IMG_Load(SRC_IMG_VIC2);
+    SDL_Texture *text=SDL_CreateTextureFromSurface(struct_jeu.rendu_fenetre,surf);
+    SDL_Rect rectangle={0.25*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution],0.2*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution],(surf->w)*1.2,(surf->h)*1.3};
+    SDL_RenderCopy(struct_jeu.rendu_fenetre,text,NULL,&rectangle);
+    SDL_FreeSurface(surf);
+    SDL_DestroyTexture(text);
+    rendre_affichage();
+}
+
+/**
+ * \fn void afficher_choix_plateau()
+ * \brief Cette fonction permet d'afficher le retour acctuel sur le choix du plateau pour une future partie
+ */
+void afficher_choix_plateau(){
+    SDL_Rect Rectangle;
+    Rectangle.x=XRAPPORT_APERCU_PLAT*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution];
+    Rectangle.y=YRAPPORT_APERCU_PLAT*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution];
+    Rectangle.h=4+HRAPPORT_APERCU_PLAT*jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution];
+    Rectangle.w=2+LRAPPORT_APERCU_PLAT*jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution];
+    if(struct_jeu.selection_plateau == NULL)recharger_Texture(&(struct_jeu.selection_plateau),SRC_IMG_JEU);
+    SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.selection_plateau,NULL,NULL);
+    SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.textures_fond_jeu[struct_jeu.texture_plateau_jeu_selectione],NULL,&Rectangle);
+    SDL_RenderCopy(struct_jeu.rendu_fenetre,struct_jeu.textures_plateau_jeu[struct_jeu.texture_plateau_jeu_selectione],NULL,&Rectangle);
 }

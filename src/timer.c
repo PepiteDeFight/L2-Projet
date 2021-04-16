@@ -53,6 +53,10 @@ void relever_fps()
     if(struct_jeu.fpsMoy>jeu_parametres.plageFPS[jeu_parametres.fps])struct_jeu.fpsMoy=jeu_parametres.plageFPS[jeu_parametres.fps];
 }
 
+/**
+ * \fn void action_timer()
+ * \brief La fonction action_timer permet d'executer les fonctions de déplacement pour chaque personnage
+ */
 void action_timer()
 {
     if(struct_jeu.ticks_fin-TICKS_RATE_ACTIONS>=struct_jeu.ticks_actions)
@@ -65,7 +69,10 @@ void action_timer()
         pesanteur();
     }
 }
-
+/**
+ * \fn void initialisation_fps()
+ * \brief La fonction initialisation_fps permet de remplir le tableau plageFPS présent dans la structure jeu_parametres permettant aux joueurs d'avoir une plage potentielle de fps
+ */
 void initialisation_fps()
 {
     jeu_parametres.plageFPS[0]=30;

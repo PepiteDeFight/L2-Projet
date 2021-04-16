@@ -75,7 +75,7 @@ $(function() {
 
 <p>Contient l'implémentation des fonctions d'initialisation, comme la police, les variables, les structures . . .  
 <a href="#details">Plus de détails...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="init_8h_source.html">../include/init.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../lib/init.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de init.c:</div>
 <div class="dyncontent">
@@ -94,11 +94,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <tr class="memdesc:a1f2b627c230f810f9f76c1d7bd71408d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet d'initialiser la plupart des structures et d'appeler les fonctions pour créer la fenetre, lancer l'écran de chargement et récupérer les parametres utilisateur comme les contrôles. <br /></td></tr>
 <tr class="separator:a1f2b627c230f810f9f76c1d7bd71408d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d98d601277d905e42500625b3e13263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a4d98d601277d905e42500625b3e13263">chargement_police</a> (int taille)</td></tr>
-<tr class="memdesc:a4d98d601277d905e42500625b3e13263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet de chnager la taille de la police (cf <a class="el" href="defs_8h.html" title="Contient tous les #defines, tous les #include, c&#39;est le fichier père de tous les autres fichiers.">defs.h</a> -&gt; différentes tailles de police)  <a href="init_8c.html#a4d98d601277d905e42500625b3e13263">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a4d98d601277d905e42500625b3e13263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet de chnager la taille de la police (cf defs.h -&gt; différentes tailles de police)  <a href="init_8c.html#a4d98d601277d905e42500625b3e13263">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4d98d601277d905e42500625b3e13263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebdb7b351152b7e01f115f198a2d39b0"><td class="memItemLeft" align="right" valign="top"><a id="aebdb7b351152b7e01f115f198a2d39b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#aebdb7b351152b7e01f115f198a2d39b0">chargement_parametres</a> ()</td></tr>
-<tr class="memdesc:aebdb7b351152b7e01f115f198a2d39b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet de sois crééer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés. <br /></td></tr>
+<tr class="memdesc:aebdb7b351152b7e01f115f198a2d39b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet de sois créer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés. <br /></td></tr>
 <tr class="separator:aebdb7b351152b7e01f115f198a2d39b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0736ac0410a8aa60f0146eed2339cd38"><td class="memItemLeft" align="right" valign="top"><a id="a0736ac0410a8aa60f0146eed2339cd38"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#a0736ac0410a8aa60f0146eed2339cd38">sauvegarde_parametres</a> ()</td></tr>
@@ -107,6 +107,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <tr class="memitem:afa7521ae01d0558194aca05f49f8c81c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8c.html#afa7521ae01d0558194aca05f49f8c81c">quitter</a> (int code)</td></tr>
 <tr class="memdesc:afa7521ae01d0558194aca05f49f8c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l'utilisateur de sois mettre fin au programme sois poursuivre malgré l'erreur.  <a href="init_8c.html#afa7521ae01d0558194aca05f49f8c81c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:afa7521ae01d0558194aca05f49f8c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90239fe717c6d34278d2cfe03c945ad"><td class="memItemLeft" align="right" valign="top"><a id="ad90239fe717c6d34278d2cfe03c945ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_all_varia</b> ()</td></tr>
+<tr class="separator:ad90239fe717c6d34278d2cfe03c945ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Contient l'implémentation des fonctions d'initialisation, comme la police, les variables, les structures . . . </p>
@@ -131,7 +134,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
       </table>
 </div><div class="memdoc">
 
-<p>Cette fonction permet de chnager la taille de la police (cf <a class="el" href="defs_8h.html" title="Contient tous les #defines, tous les #include, c&#39;est le fichier père de tous les autres fichiers.">defs.h</a> -&gt; différentes tailles de police) </p>
+<p>Cette fonction permet de chnager la taille de la police (cf defs.h -&gt; différentes tailles de police) </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">taille</td><td>Correspond à la taille choisie </td></tr>
@@ -160,7 +163,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init
 <p>Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l'utilisateur de sois mettre fin au programme sois poursuivre malgré l'erreur. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">code</td><td>Corrrespond au code d'erreur d'appel de la fonction (cf <a class="el" href="defs_8h.html" title="Contient tous les #defines, tous les #include, c&#39;est le fichier père de tous les autres fichiers.">defs.h</a> -&gt; code d'erreurs) </td></tr>
+    <tr><td class="paramname">code</td><td>Corrrespond au code d'erreur d'appel de la fonction (cf defs.h -&gt; code d'erreurs) </td></tr>
   </table>
   </dd>
 </dl>

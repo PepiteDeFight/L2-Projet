@@ -32,6 +32,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <unistd.h>
+#include <time.h>
 
 #include <errno.h>
 #include "draw.h"
@@ -219,6 +220,10 @@
 #define YRAPPORT_QUITTER 0.762
 #define YMAXRAPPORT_QUITTER 0.859
 
+/*************** Choix plateau ***************/
+
+#define XRAPPORT_CONTINUER 0.89
+#define YRAPPORT_CONTINUER 0.926
 /*************** Page de jeu ***************/
 
 /*** Choix nombre de joueur ***/
@@ -476,44 +481,45 @@
 
 /*** Police ***/
 
-#define POLICE "src/police/Police.ttf"
+#define POLICE "../src/police/Police.ttf"
 
 /*** Images ***/
 
-#define SRC_IMG_PARA "img/menu/1.png"
-#define SRC_IMG_POPUP "img/popup_vierge.bmp"
-#define SRC_IMG_ACCUEIL "img/accueil/accueil.png"
-#define SRC_IMG_MULTI "img/ecran_multijoueur.png"
-#define SRC_IMG_ICON "img/icon.png"
-#define SRC_IMG_CHECK "img/menu/check.png"
-#define SRC_IMG_JEU "img/fond_partie/00.png"
-#define SRC_IMG_PLATEAU "img/plateau_partie/01.png"
-#define SRC_IMG_VIE4J "img/vie_partie/vie_4J.png"
-#define SRC_IMG_VIE2J "img/vie_partie/vie_2J.png"
-
+#define SRC_IMG_PARA "../img/menu/1.png"
+#define SRC_IMG_POPUP "../img/popup_vierge.bmp"
+#define SRC_IMG_ACCUEIL "../img/accueil/accueil.png"
+#define SRC_IMG_MULTI "../img/ecran_multijoueur.png"
+#define SRC_IMG_ICON "../img/icon.png"
+#define SRC_IMG_CHECK "../img/menu/check.png"
+#define SRC_IMG_JEU "../img/fond_partie/00.png"
+#define SRC_IMG_PLATEAU "../img/plateau_partie/01.png"
+#define SRC_IMG_VIE4J "../img/vie_partie/vie_4J.png"
+#define SRC_IMG_VIE2J "../img/vie_partie/vie_2J.png"
+#define SRC_IMG_VIC1 "../img/Victoires/equipe1.png"
+#define SRC_IMG_VIC2 "../img/Victoires/equipe2.png"
 /*** Personnages ***/
 
-#define SRC_IMG_PERSONNAGE_CHEVALIER "img/personnages/chevalier/1/000.png"
-#define SRC_IMG_PERSONNAGE_ELFE "img/personnages/elfe/1/000.png"
-#define SRC_IMG_PERSONNAGE_ELFE_FLECHE "img/personnages/elfe/1/fleche.png"
-#define SRC_IMG_PERSONNAGE_FEE "img/personnages/fee/1/000.png"
-#define SRC_IMG_PERSONNAGE_FEE_FLECHE "img/personnages/fee/1/fleche.png"
-#define SRC_IMG_PERSONNAGE_WARRIOR "img/personnages/warrior/1/000.png"
-#define SRC_IMG_PERSONNAGE_WARRIOR_FLECHE "img/personnages/warrior/3/fleche.png"
+#define SRC_IMG_PERSONNAGE_CHEVALIER "../img/personnages/chevalier/1/000.png"
+#define SRC_IMG_PERSONNAGE_ELFE "../img/personnages/elfe/1/000.png"
+#define SRC_IMG_PERSONNAGE_ELFE_FLECHE "../img/personnages/elfe/1/fleche.png"
+#define SRC_IMG_PERSONNAGE_FEE "../img/personnages/fee/1/000.png"
+#define SRC_IMG_PERSONNAGE_FEE_FLECHE "../img/personnages/fee/1/fleche.png"
+#define SRC_IMG_PERSONNAGE_WARRIOR "../img/personnages/warrior/1/000.png"
+#define SRC_IMG_PERSONNAGE_WARRIOR_FLECHE "../img/personnages/warrior/3/fleche.png"
 
-#define SRC_IMG_CHOIX_PERSONNAGE "img/personnages/choix_personnages/selection_personnages.png"
-#define SRC_IMG_PAD "img/personnages/choix_personnages/pad.png"
-#define SRC_IMG_SELECTEUR "img/personnages/choix_personnages/selecteur.png"
+#define SRC_IMG_CHOIX_PERSONNAGE "../img/personnages/choix_personnages/selection_personnages.png"
+#define SRC_IMG_PAD "../img/personnages/choix_personnages/pad.png"
+#define SRC_IMG_SELECTEUR "../img/personnages/choix_personnages/selecteur.png"
 
 /*** Fichiers ***/
 
-#define SRC_FICHIER_PARA "src/save/parametres.txt"
-#define SRC_FICHIER_DEBUG "obj/Debug/logs.txt"
+#define SRC_FICHIER_PARA "../src/save/parametres.txt"
+#define SRC_FICHIER_DEBUG "../obj/Debug/logs.txt"
 
 /*** Fichier musiques ***/
 
-#define SRC_MUSIQUE_ACCUEIL "src/sounds/Accueil.mp3"
-#define SRC_MUSIQUE_INTRO "src/sounds/Intro.mp3"
+#define SRC_MUSIQUE_ACCUEIL "../srcsounds/Accueil.mp3"
+#define SRC_MUSIQUE_INTRO "../srcsounds/Intro.mp3"
 
 /*** nombre d'image de fond de partie ***/
 

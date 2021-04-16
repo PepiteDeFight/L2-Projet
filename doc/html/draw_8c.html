@@ -76,7 +76,7 @@ $(function() {
 
 <p>Contient toutes les fonctions en rapport avec l'affichage.  
 <a href="#details">Plus de détails...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="draw_8h_source.html">../include/draw.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../lib/draw.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de draw.c:</div>
 <div class="dyncontent">
@@ -168,6 +168,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#af471b7e1463082cd616711b1dc8050e8">affiche_choix_personnages</a> (int *tab)</td></tr>
 <tr class="memdesc:af471b7e1463082cd616711b1dc8050e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet d'afficher le selecteur qui rend compte de quels personnages les joueurs sont ammenés à jouer. <br /></td></tr>
 <tr class="separator:af471b7e1463082cd616711b1dc8050e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae948e63fd2de2d9c6e0955c1ce31ee35"><td class="memItemLeft" align="right" valign="top"><a id="ae948e63fd2de2d9c6e0955c1ce31ee35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw_8c.html#ae948e63fd2de2d9c6e0955c1ce31ee35">afficher_changement_control</a> ()</td></tr>
+<tr class="memdesc:ae948e63fd2de2d9c6e0955c1ce31ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet d'indiquer au joueur qu'il est sur le point de changer un de ses controles. <br /></td></tr>
+<tr class="separator:ae948e63fd2de2d9c6e0955c1ce31ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -198,6 +202,9 @@ SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><b>couleurNoir</b> 
 <tr class="memitem:a6ca80ee27891134c4b504d14e9b3bfe8"><td class="memItemLeft" align="right" valign="top"><a id="a6ca80ee27891134c4b504d14e9b3bfe8"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>tab_rapport</b> [4] = {RAPPORT_X_J1_VIE,RAPPORT_X_J2_VIE,RAPPORT_X_J3_VIE,RAPPORT_X_J4_VIE}</td></tr>
 <tr class="separator:a6ca80ee27891134c4b504d14e9b3bfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e64eebd21aa56356e41b42f9c2fba8"><td class="memItemLeft" align="right" valign="top"><a id="a76e64eebd21aa56356e41b42f9c2fba8"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>tab_rapport_control</b> [4][4][2]</td></tr>
+<tr class="separator:a76e64eebd21aa56356e41b42f9c2fba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c963ba0a517e0ad6183a987eb91ed90"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>tab_mapRGB</b> [4][3]</td></tr>
 <tr class="separator:a4c963ba0a517e0ad6183a987eb91ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -272,7 +279,8 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>tab_rapport</b
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Valeur initiale :</b><div class="fragment"><div class="line">={</div>
+<b>Valeur initiale :</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
 <div class="line">    {255,    0,      0},</div>
 <div class="line">    {255,    255,    0},</div>
 <div class="line">    {0,      0,      255},</div>

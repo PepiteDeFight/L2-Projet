@@ -29,9 +29,7 @@ int main(int argc, char* argv[])
 
     /*------------------------------------------------------*/
     initialisation_parametres();
-    //menu_parametre();
     accueil();
-    //SDL_Delay(5000);
     quitter(QUITTER);
     return 0;
 }

@@ -5,7 +5,7 @@
 Contient l\textquotesingle{}implémentation des fonctions d\textquotesingle{}événements ainsi que de jeu.  
 
 
-{\ttfamily \#include \char`\"{}../include/input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/input.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de input.\+c\+:
 % FIG 0
 \doxysubsection*{Fonctions}
@@ -36,7 +36,10 @@ int {\bfseries choix\+\_\+plateau} ()
 \item 
 \mbox{\Hypertarget{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}\label{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}} 
 void \mbox{\hyperlink{input_8c_afb3b17ebf4a8eede1f6bdd6fd2e8817f}{jeu\+\_\+pause}} ()
-\begin{DoxyCompactList}\small\item\em Cette fonction permet de faire une pause tant que l\textquotesingle{}utilisateur n\textquotesingle{}a pas appuyer sur echape, elle n\textquotesingle{}est pas dans \mbox{\hyperlink{timer_8c}{timer.\+c}} car elle n\textquotesingle{}agit pas directement sur le temps, elle fait une sorte de boucle sans changer l\textquotesingle{}affichage. Ps\+: disponible uniquement en local. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de faire une pause tant que l\textquotesingle{}utilisateur n\textquotesingle{}a pas appuyer sur echape, elle n\textquotesingle{}est pas dans \mbox{\hyperlink{timer_8c}{timer.\+c}} car elle n\textquotesingle{}agit pas directement sur le temps, elle fait une sorte de boucle sans changer l\textquotesingle{}affichage. Ps\+: disponible uniquement en local. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{input_8c_a94edf5f581e54460968f6d3841768699}\label{input_8c_a94edf5f581e54460968f6d3841768699}} 
+void \mbox{\hyperlink{input_8c_a94edf5f581e54460968f6d3841768699}{changement\+\_\+control}} (int control, int joueur)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet le changement des controles dans les paramêtres. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}

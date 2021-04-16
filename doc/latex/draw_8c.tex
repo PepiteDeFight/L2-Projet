@@ -5,7 +5,7 @@
 Contient toutes les fonctions en rapport avec l\textquotesingle{}affichage.  
 
 
-{\ttfamily \#include \char`\"{}../include/draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/draw.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de draw.\+c\+:
 % FIG 0
 \doxysubsection*{Fonctions}
@@ -71,7 +71,10 @@ void \mbox{\hyperlink{draw_8c_a0eb6302b244f141c88a8b7a02610146b}{modifier\+\_\+w
 \begin{DoxyCompactList}\small\item\em Lorsque l\textquotesingle{}utilisateur est dans les paramètres du jeu, il peut être ammené à modifier la taille de sa fenêtre, cette fonction regroupe toutes les fonctions réalisant ce changement. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{draw_8c_af471b7e1463082cd616711b1dc8050e8}\label{draw_8c_af471b7e1463082cd616711b1dc8050e8}} 
 void \mbox{\hyperlink{draw_8c_af471b7e1463082cd616711b1dc8050e8}{affiche\+\_\+choix\+\_\+personnages}} (int $\ast$tab)
-\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher le selecteur qui rend compte de quels personnages les joueurs sont ammenés à jouer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher le selecteur qui rend compte de quels personnages les joueurs sont ammenés à jouer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}\label{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}} 
+void \mbox{\hyperlink{draw_8c_ae948e63fd2de2d9c6e0955c1ce31ee35}{afficher\+\_\+changement\+\_\+control}} ()
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}indiquer au joueur qu\textquotesingle{}il est sur le point de changer un de ses controles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -101,6 +104,9 @@ S\+D\+L\+\_\+\+Color {\bfseries couleur\+Noir} = \{0, 0, 0, 255\}
 \item 
 \mbox{\Hypertarget{draw_8c_a6ca80ee27891134c4b504d14e9b3bfe8}\label{draw_8c_a6ca80ee27891134c4b504d14e9b3bfe8}} 
 const float {\bfseries tab\+\_\+rapport} \mbox{[}4\mbox{]} = \{R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J1\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J2\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J3\+\_\+\+V\+IE,R\+A\+P\+P\+O\+R\+T\+\_\+\+X\+\_\+\+J4\+\_\+\+V\+IE\}
+\item 
+\mbox{\Hypertarget{draw_8c_a76e64eebd21aa56356e41b42f9c2fba8}\label{draw_8c_a76e64eebd21aa56356e41b42f9c2fba8}} 
+const float {\bfseries tab\+\_\+rapport\+\_\+control} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\mbox{[}2\mbox{]}
 \item 
 const uint32\+\_\+t {\bfseries tab\+\_\+map\+R\+GB} \mbox{[}4\mbox{]}\mbox{[}3\mbox{]}
 \end{DoxyCompactItemize}
@@ -168,7 +174,8 @@ Cette fonction créer les textures en fonction du choix du joueur sur son person
 
 {\bfseries Valeur initiale \+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{=\{}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
 \DoxyCodeLine{    \{255,    0,      0\},}
 \DoxyCodeLine{    \{255,    255,    0\},}
 \DoxyCodeLine{    \{0,      0,      255\},}

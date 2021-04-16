@@ -33,22 +33,25 @@ void initialisation_Textures()
  */
 void initialisation_parametres()
 {
-    //R�cup�rations des parametres (controls,...)
+    //Recuperations des parametres (controls,...)
     chargement_parametres();
     initialisation_fps();
     initialisation_Textures();
     struct_jeu.ticks_depart=SDL_GetTicks();
     struct_jeu.ticks_evo=struct_jeu.ticks_depart;
     struct_jeu.ticks_actions=struct_jeu.ticks_depart;
+    time_t t = time(NULL); // on récupère la date acctuelle
+    struct tm *now = localtime(&t);
     struct_jeu.debug=fopen(SRC_FICHIER_DEBUG,"w");
-    //D�marrage des fonctions n�c�ssaires � l'affichage
+    fprintf(struct_jeu.debug,"Démarage du jeu : %d-%02d-%02d %02d:%02d:%02d\n",now->tm_year + 1900, now->tm_mon + 1, now->tm_mday, now->tm_hour, now->tm_min, now->tm_sec);
+    //D�marrage des fonctions necessaires a l'affichage
     definir_resolutions();
     creation_fenetre();
     modifier_window();
 
     //chargement des textures
     chargerTextures();
-    struct_jeu.frequence_video=0;//on initialise la variable qui g�re les textures de fond de vid�o d'accueil
+    struct_jeu.frequence_video=0;//on initialise la variable qui gere les textures de fond de video d'accueil
     struct_jeu.texture_plateau_jeu_selectione=0;
 
     //Chargement de la police
@@ -60,10 +63,9 @@ void initialisation_parametres()
     chargement_musique(6,MUSIQUE_INTRO,0);
     changement_volumes_musiques();
 
-    //affichage de l'�cran de chargement (d�marrage)
+    //affichage de l'�cran de chargement (demarrage)
     chargement_demarrage();
     detruire_musique(MUSIQUE_INTRO);
-
 }
 
 /**
@@ -84,19 +86,21 @@ void chargement_police(int taille)
  * \fn void chargement_parametres()
  * \brief Cette fonction permet de sois créer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés
  */
-void chargement_parametres() //Cette fonction � pour but de r�cup�rer les contr�les sauvegard�s; Si jamais des contr�les sont perdu ou in�xistants, la fonction remet/met par d�fault des contr�les
+void chargement_parametres() //Cette fonction a pour but de recuperer les controles sauvegardes; Si jamais des controles sont perdu ou inexistants, la fonction remet/met par default des controles
 {
     FILE *f_parametres=NULL;
     f_parametres=fopen(SRC_FICHIER_PARA,"r");
-    if(errno==2) //si fichier introuvable alors cr�ation du fichier
+    if(f_parametres==NULL) //si fichier introuvable alors creation du fichier
     {
+        fprintf(struct_jeu.debug,"Tentative de création fichier paramètres\n");
         if(f_parametres != NULL)fclose(f_parametres);
         f_parametres=fopen(SRC_FICHIER_PARA,"w");
         fprintf(f_parametres,"-GRAPHISMES-\nMode : %d\nResolution : %d\nFps : %d\nAfficherFps : %d\n-INTERFACE-\nEchelle : %d\n-AUDIO-\nMusique : %d\nEffets : %d\nDialogues : %d\nArrierePlan : %d\n-C-O-N-T-R-O-L-E-S-\n_JOUEUR1_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR2_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR3_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR4_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n", DEF_MODE, DEF_RESO, DEF_FPS, DEF_AFFPS, DEF_ECHELLE, DEF_SOUND,DEF_SOUND, DEF_SOUND, 1, DEF_AVANCER1, DEF_RECULER1, DEF_SAUTER1, DEF_ATTAQUE1, DEF_AVANCER2, DEF_RECULER2, DEF_SAUTER2, DEF_ATTAQUE2, DEF_AVANCER3, DEF_RECULER3, DEF_SAUTER3, DEF_ATTAQUE3, DEF_ATTAQUE4, DEF_RECULER4, DEF_SAUTER4, DEF_ATTAQUE4);
         fclose(f_parametres);
         f_parametres=fopen(SRC_FICHIER_PARA,"r");
+        if(f_parametres==NULL)fprintf(struct_jeu.debug,"Echec de la création\n");
+        else fprintf(struct_jeu.debug,"Succès de création fichier paramètres \n");
     }
-    //fscanf(f_parametres,"-GRAPHISMES-\nMode : %d\nResolution : %d\nFps : %d\nAfficherFps : %d\n-INTERFACE-\nEchelle : %d\n-AUDIO-\nMusique : %d\nEffets : %d\nDialogues : %d\nArrierePlan : %d\n-C-O-N-T-R-O-L-E-S-\n_JOUEUR1_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR2_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR3_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR4_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n", &jeu_parametres.mode, &jeu_parametres.resolution, &jeu_parametres.fps, &jeu_parametres.affichFPS, &jeu_parametres.echelle, &jeu_parametres.musique,  &jeu_parametres.effets, &jeu_parametres.dialogues, &jeu_parametres.arriere_plan,   &jeu_parametres.controles[J1][AVANCER],   &jeu_parametres.controles[J1][RECULER], &jeu_parametres.controles[J1][SAUTER], &jeu_parametres.controles[J1][ATTAQUER],    &jeu_parametres.controles[J2][AVANCER],    &jeu_parametres.controles[J2][RECULER], &jeu_parametres.controles[J2][SAUTER], &jeu_parametres.controles[J2][ATTAQUER],     &jeu_parametres.controles[J3][AVANCER],     &jeu_parametres.controles[J3][RECULER], &jeu_parametres.controles[J3][SAUTER], &jeu_parametres.controles[J3][ATTAQUER],      &jeu_parametres.controles[J4][AVANCER],      &jeu_parametres.controles[J4][RECULER], &jeu_parametres.controles[J4][SAUTER], &jeu_parametres.controles[J4][ATTAQUER]);
     fscanf(f_parametres,"-GRAPHISMES-\nMode : %d\nResolution : %d\nFps : %d\nAfficherFps : %d\n-INTERFACE-\nEchelle : %d\n-AUDIO-\nMusique : %d\nEffets : %d\nDialogues : %d\nArrierePlan : %d\n-C-O-N-T-R-O-L-E-S-\n_JOUEUR1_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR2_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR3_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR4_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n", &(jeu_parametres.mode), &(jeu_parametres.resolution), &(jeu_parametres.fps), &(jeu_parametres.affichFPS), &(jeu_parametres.echelle), &(jeu_parametres.musique),  &(jeu_parametres.effets), &(jeu_parametres.dialogues), &(jeu_parametres.arriere_plan),   &(jeu_parametres.controles[J1][AVANCER]),   &(jeu_parametres.controles[J1][RECULER]), &(jeu_parametres.controles[J1][SAUTER]), &(jeu_parametres.controles[J1][ATTAQUER]),    &(jeu_parametres.controles[J2][AVANCER]),    &(jeu_parametres.controles[J2][RECULER]), &(jeu_parametres.controles[J2][SAUTER]), &(jeu_parametres.controles[J2][ATTAQUER]),     &(jeu_parametres.controles[J3][AVANCER]),     &(jeu_parametres.controles[J3][RECULER]), &(jeu_parametres.controles[J3][SAUTER]), &(jeu_parametres.controles[J3][ATTAQUER]),      &(jeu_parametres.controles[J4][AVANCER]),      &(jeu_parametres.controles[J4][RECULER]), &(jeu_parametres.controles[J4][SAUTER]), &(jeu_parametres.controles[J4][ATTAQUER]));
     fclose(f_parametres);
 }
@@ -107,10 +111,13 @@ void chargement_parametres() //Cette fonction � pour but de r�cup�rer les 
 */
 void sauvegarde_parametres()
 {
+    fprintf(struct_jeu.debug,"Sauvegarde des paramètres\n");
     FILE *f_parametres=NULL;
     f_parametres=fopen(SRC_FICHIER_PARA,"w");
+    if(f_parametres == NULL)fprintf(struct_jeu.debug,"Echec ouverture fichier paramètres\n");
     fprintf(f_parametres,"-GRAPHISMES-\nMode : %d\nResolution : %d\nFps : %d\nAfficherFps : %d\n-INTERFACE-\nEchelle : %d\n-AUDIO-\nMusique : %d\nEffets : %d\nDialogues : %d\nArrierePlan : %d\n-C-O-N-T-R-O-L-E-S-\n_JOUEUR1_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR2_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR3_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n_JOUEUR4_\nAvancer : %d\nReculer : %d\nSauter : %d\nAttaquer : %d\n", jeu_parametres.mode, jeu_parametres.resolution, jeu_parametres.fps, jeu_parametres.affichFPS, jeu_parametres.echelle, jeu_parametres.musique,  jeu_parametres.effets, jeu_parametres.dialogues, jeu_parametres.arriere_plan,   jeu_parametres.controles[J1][AVANCER],   jeu_parametres.controles[J1][RECULER], jeu_parametres.controles[J1][SAUTER], jeu_parametres.controles[J1][ATTAQUER],    jeu_parametres.controles[J2][AVANCER],    jeu_parametres.controles[J2][RECULER], jeu_parametres.controles[J2][SAUTER], jeu_parametres.controles[J2][ATTAQUER],     jeu_parametres.controles[J3][AVANCER],     jeu_parametres.controles[J3][RECULER], jeu_parametres.controles[J3][SAUTER], jeu_parametres.controles[J3][ATTAQUER],      jeu_parametres.controles[J4][AVANCER],      jeu_parametres.controles[J4][RECULER], jeu_parametres.controles[J4][SAUTER], jeu_parametres.controles[J4][ATTAQUER]);
     fclose(f_parametres);
+    fprintf(struct_jeu.debug,"Sauvegarde terminée\n");
 }
 
 /**

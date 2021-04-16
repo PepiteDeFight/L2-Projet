@@ -5,7 +5,7 @@
 Contient l\textquotesingle{}implémentation des fonctions d\textquotesingle{}initialisation, comme la police, les variables, les structures . . .  
 
 
-{\ttfamily \#include \char`\"{}../include/init.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/init.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de init.\+c\+:
 % FIG 0
 \doxysubsection*{Fonctions}
@@ -18,15 +18,18 @@ void \mbox{\hyperlink{init_8c_ae10cc14a06e88c4de29b5eb8b066284f}{initialisation\
 void \mbox{\hyperlink{init_8c_a1f2b627c230f810f9f76c1d7bd71408d}{initialisation\+\_\+parametres}} ()
 \begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}initialiser la plupart des structures et d\textquotesingle{}appeler les fonctions pour créer la fenetre, lancer l\textquotesingle{}écran de chargement et récupérer les parametres utilisateur comme les contrôles. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{init_8c_a4d98d601277d905e42500625b3e13263}{chargement\+\_\+police}} (int taille)
-\begin{DoxyCompactList}\small\item\em Cette fonction permet de chnager la taille de la police (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ différentes tailles de police) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de chnager la taille de la police (cf defs.\+h -\/$>$ différentes tailles de police) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{init_8c_aebdb7b351152b7e01f115f198a2d39b0}\label{init_8c_aebdb7b351152b7e01f115f198a2d39b0}} 
 void \mbox{\hyperlink{init_8c_aebdb7b351152b7e01f115f198a2d39b0}{chargement\+\_\+parametres}} ()
-\begin{DoxyCompactList}\small\item\em Cette fonction permet de sois crééer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de sois créer le fichier de sauvegarde des parametres sois de récupérer les parametres sauvegardés. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{init_8c_a0736ac0410a8aa60f0146eed2339cd38}\label{init_8c_a0736ac0410a8aa60f0146eed2339cd38}} 
 void \mbox{\hyperlink{init_8c_a0736ac0410a8aa60f0146eed2339cd38}{sauvegarde\+\_\+parametres}} ()
 \begin{DoxyCompactList}\small\item\em Cette fonction permet de sauvegarder les parametres utilisateur dans le fichier de sauvegarde. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{init_8c_afa7521ae01d0558194aca05f49f8c81c}{quitter}} (int code)
-\begin{DoxyCompactList}\small\item\em Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l\textquotesingle{}utilisateur de sois mettre fin au programme sois poursuivre malgré l\textquotesingle{}erreur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de terminer le programme en faisant apparaitre une popup permettant à l\textquotesingle{}utilisateur de sois mettre fin au programme sois poursuivre malgré l\textquotesingle{}erreur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{init_8c_ad90239fe717c6d34278d2cfe03c945ad}\label{init_8c_ad90239fe717c6d34278d2cfe03c945ad}} 
+void {\bfseries write\+\_\+all\+\_\+varia} ()
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -55,7 +58,7 @@ Le Mans Université
 
 
 
-Cette fonction permet de chnager la taille de la police (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ différentes tailles de police) 
+Cette fonction permet de chnager la taille de la police (cf defs.\+h -\/$>$ différentes tailles de police) 
 
 
 \begin{DoxyParams}{Paramètres}
@@ -74,6 +77,6 @@ Cette fonction permet de terminer le programme en faisant apparaitre une popup p
 
 
 \begin{DoxyParams}{Paramètres}
-{\em code} & Corrrespond au code d\textquotesingle{}erreur d\textquotesingle{}appel de la fonction (cf \mbox{\hyperlink{defs_8h}{defs.\+h}} -\/$>$ code d\textquotesingle{}erreurs) \\
+{\em code} & Corrrespond au code d\textquotesingle{}erreur d\textquotesingle{}appel de la fonction (cf defs.\+h -\/$>$ code d\textquotesingle{}erreurs) \\
 \hline
 \end{DoxyParams}

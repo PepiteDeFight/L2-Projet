@@ -5,7 +5,7 @@
 	<iostream>
 	<SDL.h>
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -39,12 +39,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_main.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_stdinc.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -73,27 +73,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_config.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_config.h
 	"SDL_platform.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_platform.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\begin_code.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\begin_code.h
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\close_code.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\close_code.h
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_assert.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_atomic.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
@@ -101,7 +101,7 @@
 	<mbarrier.h>
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_audio.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -111,25 +111,25 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_error.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_endian.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mutex.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_thread.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -140,18 +140,18 @@
 	<stdlib.h>
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_rwops.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_clipboard.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_cpuinfo.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -170,7 +170,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_events.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -184,7 +184,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_video.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -192,13 +192,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_pixels.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_rect.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -206,7 +206,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_surface.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -215,11 +215,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_blendmode.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_keyboard.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -227,27 +227,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_keycode.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_scancode.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mouse.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_joystick.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_gamecontroller.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -255,11 +255,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_quit.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_gesture.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -267,71 +267,71 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_touch.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_filesystem.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_haptic.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_hints.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_loadso.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_log.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_messagebox.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_metal.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_metal.h
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_power.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_render.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_sensor.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_shape.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -340,7 +340,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_system.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -348,19 +348,19 @@
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_timer.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_version.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1615993187 source:c:\users\rod4401\desktop\project l2\src\init.c
-	"../include/init.h"
+1618500322 source:c:\users\rod4401\desktop\project l2\src\init.c
+	"../lib/init.h"
 
 1610620623 c:\users\rod4401\desktop\project l2\src\init.h
 	"struct.h"
@@ -383,18 +383,18 @@
 	"actions.h"
 	<errno.h>
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_image.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263197 c:\users\rod4401\desktop\project l2\sdl\include\sdl_ttf.h
+1614266797 c:\users\rod4401\desktop\project l2\sdl\include\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
 
-1614263198 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mixer.h
+1614266798 c:\users\rod4401\desktop\project l2\sdl\include\sdl_mixer.h
 	"SDL_stdinc.h"
 	"SDL_rwops.h"
 	"SDL_audio.h"
@@ -412,20 +412,20 @@
 1610180242 c:\users\rod4401\desktop\project l2\src\actions.h
 	"struct.h"
 
-1614251330 source:c:\users\rod4401\desktop\project l2\src\main.c
-	"../include/struct.h"
+1618553690 source:c:\users\rod4401\desktop\project l2\src\main.c
+	"../lib/struct.h"
 
-1615993830 source:c:\users\rod4401\desktop\project l2\src\actions.c
-	"../include/actions.h"
+1616412783 source:c:\users\rod4401\desktop\project l2\src\actions.c
+	"../lib/actions.h"
 
-1615993189 source:c:\users\rod4401\desktop\project l2\src\draw.c
-	"../include/draw.h"
+1618553878 source:c:\users\rod4401\desktop\project l2\src\draw.c
+	"../lib/draw.h"
 
-1615993189 source:c:\users\rod4401\desktop\project l2\src\input.c
-	"../include/input.h"
+1618500322 source:c:\users\rod4401\desktop\project l2\src\input.c
+	"../lib/input.h"
 
-1613651130 source:c:\users\rod4401\desktop\project l2\src\sockets.c
-	"../include/sockets.h"
+1616412831 source:c:\users\rod4401\desktop\project l2\src\sockets.c
+	"../lib/sockets.h"
 
 1610395223 c:\users\rod4401\desktop\project l2\src\sockets.h
 	"struct.h"
@@ -478,14 +478,14 @@
 1612163691 c:\users\rod4401\desktop\project l2\src\include\sounds.h
 	"struct.h"
 
-1613651197 source:c:\users\rod4401\desktop\project l2\src\sounds.c
-	"../include/sounds.h"
+1616412834 source:c:\users\rod4401\desktop\project l2\src\sounds.c
+	"../lib/sounds.h"
 
 1612085726 c:\users\rod4401\desktop\project l2\src\include\timer.h
 	"struct.h"
 
-1613651197 source:c:\users\rod4401\desktop\project l2\src\timer.c
-	"../include/timer.h"
+1617700970 source:c:\users\rod4401\desktop\project l2\src\timer.c
+	"../lib/timer.h"
 
 1613653452 c:\users\rod4401\desktop\project l2\include\actions.h
 	"struct.h"
@@ -536,5 +536,57 @@
 	"struct.h"
 
 1613651197 c:\users\rod4401\desktop\project l2\include\timer.h
+	"struct.h"
+
+1618500322 c:\users\rod4401\desktop\project l2\lib\actions.h
+	"struct.h"
+
+1617009290 c:\users\rod4401\desktop\project l2\lib\struct.h
+	"defs.h"
+
+1618553420 c:\users\rod4401\desktop\project l2\lib\defs.h
+	<winsock2.h>
+	<winsock.h>
+	<windows.h>
+	<netdb.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<stdio.h>
+	<string.h>
+	<strings.h>
+	<stdlib.h>
+	<math.h>
+	<unistd.h>
+	<time.h>
+	<errno.h>
+	"draw.h"
+	"input.h"
+	"init.h"
+	"actions.h"
+	"sounds.h"
+	"sockets.h"
+	"timer.h"
+
+1618553335 c:\users\rod4401\desktop\project l2\lib\draw.h
+	"struct.h"
+
+1617897641 c:\users\rod4401\desktop\project l2\lib\input.h
+	"struct.h"
+
+1615992970 c:\users\rod4401\desktop\project l2\lib\init.h
+	"struct.h"
+
+1613657071 c:\users\rod4401\desktop\project l2\lib\sounds.h
+	"struct.h"
+
+1613657067 c:\users\rod4401\desktop\project l2\lib\sockets.h
+	"struct.h"
+
+1613654797 c:\users\rod4401\desktop\project l2\lib\timer.h
 	"struct.h"
 

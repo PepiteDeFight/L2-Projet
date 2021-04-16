@@ -116,6 +116,7 @@ typedef struct
     SDL_Texture *textures_plateau_jeu[NB_IMG_PLATEAU];
     int texture_plateau_jeu_selectione;
     SDL_Texture *textures_personnages_joueurs[4][6][10];
+    SDL_Texture *selection_plateau;
     //menu choix personnages
     SDL_Texture *selection_personnages;
     SDL_Texture *selecteur;

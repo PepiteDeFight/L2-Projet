@@ -67,9 +67,17 @@ void accueil()
                     }
                     if(event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_MULTIJOUEUR && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_MULTIJOUEUR) //Appuis du bouton Campagne par l'utilisateur
                     {
+                        /* ===============================
+
+
+                                DEMARAGE D'UNE PARTIE ICI
+
+
+                           ===============================  */
                         struct_jeu.nombre_joueurs=multijoueur();
                         if(struct_jeu.reseauOn)if(!choix_serveur())partieOn=SDL_FALSE;
                         if(struct_jeu.nombre_joueurs && partieOn)if(!choix_personnages())partieOn=SDL_FALSE;
+                        if(struct_jeu.nombre_joueurs && partieOn)if(!choix_plateau())partieOn=SDL_FALSE;
                         if(struct_jeu.nombre_joueurs && partieOn)partie();
                         struct_jeu.nombre_joueurs=0;
                         struct_jeu.reseauOn=0;
@@ -421,16 +429,25 @@ void partie()
     SDL_Event event;
     struct_jeu.joueurs[0].positionX=410;//JOUEUR 1
     struct_jeu.joueurs[1].positionX=1560;//JOUEUR 2
+    if(struct_jeu.nombre_joueurs>2){
     struct_jeu.joueurs[2].positionX=530;//JOUEUR 3
     struct_jeu.joueurs[3].positionX=1440;//JOUEUR 4
+    }
     for(;;)
     {
-        //printf("Boucle %d avec %d\n", a++, SDL_GetTicks());
         afficher_partie();
         afficher_joueurs();
         afficher_vie_joueurs();
         affichage_fps();
         rendre_affichage();
+        if(struct_jeu.joueurs[J1].vie + struct_jeu.joueurs[J3].vie <=0){
+            victoire(2);
+            return;
+        }
+        if(struct_jeu.joueurs[J2].vie + struct_jeu.joueurs[J4].vie <=0){
+            victoire(1);
+            return;
+        }
         while(SDL_PollEvent(&event))
             switch(event.type)
             {
@@ -438,25 +455,25 @@ void partie()
                 quitter(QUITTER);
                 break;
             case SDL_KEYDOWN:
-                if(event.key.keysym.sym == jeu_parametres.controles[J1][0])struct_jeu.tableau_event[J1][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J2][0])struct_jeu.tableau_event[J2][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J3][0])struct_jeu.tableau_event[J3][0]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J4][0])struct_jeu.tableau_event[J4][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][0] && struct_jeu.joueurs[J1].vie>0)struct_jeu.tableau_event[J1][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][0] && struct_jeu.joueurs[J2].vie>0)struct_jeu.tableau_event[J2][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][0] && struct_jeu.joueurs[J3].vie>0)struct_jeu.tableau_event[J3][0]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][0] && struct_jeu.joueurs[J4].vie>0)struct_jeu.tableau_event[J4][0]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.controles[J1][1])struct_jeu.tableau_event[J1][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J2][1])struct_jeu.tableau_event[J2][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J3][1])struct_jeu.tableau_event[J3][1]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J4][1])struct_jeu.tableau_event[J4][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][1] && struct_jeu.joueurs[J1].vie>0)struct_jeu.tableau_event[J1][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][1] && struct_jeu.joueurs[J2].vie>0)struct_jeu.tableau_event[J2][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][1] && struct_jeu.joueurs[J3].vie>0)struct_jeu.tableau_event[J3][1]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][1] && struct_jeu.joueurs[J4].vie>0)struct_jeu.tableau_event[J4][1]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.controles[J1][2])struct_jeu.tableau_event[J1][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J2][2])struct_jeu.tableau_event[J2][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J3][2])struct_jeu.tableau_event[J3][2]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J4][2])struct_jeu.tableau_event[J4][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][2] && struct_jeu.joueurs[J1].vie>0)struct_jeu.tableau_event[J1][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][2] && struct_jeu.joueurs[J2].vie>0)struct_jeu.tableau_event[J2][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][2] && struct_jeu.joueurs[J3].vie>0)struct_jeu.tableau_event[J3][2]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][2] && struct_jeu.joueurs[J4].vie>0)struct_jeu.tableau_event[J4][2]=SDL_TRUE;
 
-                if(event.key.keysym.sym == jeu_parametres.controles[J1][3])struct_jeu.tableau_event[J1][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J2][3])struct_jeu.tableau_event[J2][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J3][3])struct_jeu.tableau_event[J3][3]=SDL_TRUE;
-                if(event.key.keysym.sym == jeu_parametres.controles[J4][3])struct_jeu.tableau_event[J4][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J1][3] && struct_jeu.joueurs[J1].vie>0)struct_jeu.tableau_event[J1][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J2][3] && struct_jeu.joueurs[J2].vie>0)struct_jeu.tableau_event[J2][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J3][3] && struct_jeu.joueurs[J3].vie>0)struct_jeu.tableau_event[J3][3]=SDL_TRUE;
+                if(event.key.keysym.sym == jeu_parametres.controles[J4][3] && struct_jeu.joueurs[J4].vie>0)struct_jeu.tableau_event[J4][3]=SDL_TRUE;
 
 
                 if(event.key.keysym.sym == SDLK_ESCAPE)jeu_pause();
@@ -676,22 +693,40 @@ int choix_personnages()
     return 1;
 }
 
+/**
+ *\fn int choix_plateau()
+ *\brief Cette fonction récupère les informations inputs pour le choix du plateau
+ */
 int choix_plateau()
 {
-    /*
-    if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_BM_CHOIX_PLAT && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_BM_CHOIX_PLAT && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_BM_CHOIX_PLAT && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_BM_CHOIX_PLAT)
-    {
-        struct_jeu.texture_plateau_jeu_selectione--;
-        if(struct_jeu.texture_plateau_jeu_selectione < 0)struct_jeu.texture_plateau_jeu_selectione=2;
-    }//bouton moins
-    if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_BP_CHOIX_PLAT && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_BP_CHOIX_PLAT && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_BP_CHOIX_PLAT && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_BP_CHOIX_PLAT)
-    {
-        struct_jeu.texture_plateau_jeu_selectione++;
-        if(struct_jeu.texture_plateau_jeu_selectione > 2)struct_jeu.texture_plateau_jeu_selectione=0;
-    }//bouton plus
-    break;
-    */
-    return 1;
+    SDL_Event event;
+    while(1){
+        afficher_choix_plateau();
+        rendre_affichage();
+        while(SDL_PollEvent(&event))
+        switch(event.type){
+            case SDL_MOUSEBUTTONDOWN:
+                if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_BM_CHOIX_PLAT && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_BM_CHOIX_PLAT && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_BM_CHOIX_PLAT && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_BM_CHOIX_PLAT)
+                {
+                    struct_jeu.texture_plateau_jeu_selectione--;
+                    if(struct_jeu.texture_plateau_jeu_selectione < 0)struct_jeu.texture_plateau_jeu_selectione=2;
+                }//bouton moins
+                if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_BP_CHOIX_PLAT && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XMAXRAPPORT_BP_CHOIX_PLAT && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_BP_CHOIX_PLAT && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YMAXRAPPORT_BP_CHOIX_PLAT)
+                {
+                    struct_jeu.texture_plateau_jeu_selectione++;
+                    if(struct_jeu.texture_plateau_jeu_selectione > 2)struct_jeu.texture_plateau_jeu_selectione=0;
+                }//bouton plus
+                if(event.button.x>=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution]*XRAPPORT_CONTINUER && event.button.x<=jeu_parametres.reso[0][jeu_parametres.mode?9:jeu_parametres.resolution] && event.button.y>=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution]*YRAPPORT_CONTINUER && event.button.y<=jeu_parametres.reso[1][jeu_parametres.mode?9:jeu_parametres.resolution])
+                {
+                    return 1;
+                }//bouton continuer
+
+                break;
+            case SDL_KEYDOWN:
+                if(event.key.keysym.sym == SDLK_RETURN)return 1;
+        }
+    }
+    return 0;
 }
 /**
  * \fn void jeu_pause()
@@ -730,4 +765,47 @@ void changement_control(int control, int joueur)
     while(event.type!=SDL_KEYDOWN)SDL_WaitEvent(&event);
     if(event.key.keysym.sym == SDLK_ESCAPE)return;
     jeu_parametres.controles[joueur][control]=event.key.keysym.sym;
+}
+
+/**
+ *\fn void ignorer_event()
+ *\brief Cette fonction a pour but d'ignorer les evenements permettant à une page de ne pas planter
+ */
+void ignorer_event()
+{
+    SDL_EventState(SDL_KEYDOWN,SDL_DISABLE);
+    SDL_EventState(SDL_KEYUP,SDL_DISABLE);
+    SDL_EventState(SDL_MOUSEBUTTONDOWN,SDL_DISABLE);
+    SDL_EventState(SDL_MOUSEBUTTONUP,SDL_DISABLE);
+    SDL_EventState(SDL_MOUSEMOTION,SDL_DISABLE);
+    SDL_EventState(SDL_QUIT,SDL_DISABLE);
+    SDL_EventState(SDL_WINDOWEVENT,SDL_DISABLE);
+}
+
+/**
+ *\fn void retablir_event()
+ *\brief Cette fonction rétabli la lecture des évenements
+ */
+void retablir_event()
+{
+    SDL_EventState(SDL_KEYDOWN,SDL_ENABLE);
+    SDL_EventState(SDL_KEYUP,SDL_ENABLE);
+    SDL_EventState(SDL_MOUSEBUTTONDOWN,SDL_ENABLE);
+    SDL_EventState(SDL_MOUSEBUTTONUP,SDL_ENABLE);
+    SDL_EventState(SDL_MOUSEBUTTONUP,SDL_ENABLE);
+    SDL_EventState(SDL_MOUSEMOTION,SDL_ENABLE);
+    SDL_EventState(SDL_QUIT,SDL_ENABLE);
+    SDL_EventState(SDL_WINDOWEVENT,SDL_ENABLE);
+}
+
+/**
+ *\fn void victoire()
+ *\brief Cette fonction permet de faire afficher la victoire à l'équipe gagnante et d'attendre l'appuis de la touche entrée pour revenir à l'accueil
+ */
+void victoire(int equipe){
+    afficher_victoire(equipe);
+    SDL_Event Event;
+    while(1)
+        while(SDL_PollEvent(&Event))
+            if(Event.type == SDL_KEYDOWN && Event.key.keysym.sym==SDLK_RETURN) return;
 }

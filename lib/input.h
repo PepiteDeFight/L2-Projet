@@ -18,8 +18,12 @@ int multijoueur();
 void partie();
 int choix_serveur();
 int choix_personnages();
+int choix_plateau();
 void jeu_pause();
 void changement_control(int control, int joueur);
+void ignorer_event();
+void retablir_event();
+void victoire(int equipe);
 
 
 

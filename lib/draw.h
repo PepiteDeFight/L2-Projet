@@ -35,6 +35,8 @@ void afficher_pause();
 void modifier_window();
 void affiche_choix_personnages(int *tab);
 void afficher_changement_control();
+void afficher_victoire(int equipe);
+void afficher_choix_plateau();
 
 
 

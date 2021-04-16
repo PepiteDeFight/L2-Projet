@@ -5,7 +5,7 @@
 Contient l\textquotesingle{}implementation des fonctions en rapport avec les deplacements des personnages.  
 
 
-{\ttfamily \#include \char`\"{}../include/actions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lib/actions.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de actions.\+c\+:
 % FIG 0
 \doxysubsection*{Fonctions}
