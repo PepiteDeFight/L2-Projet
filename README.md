@@ -83,7 +83,7 @@ Ce projet est pour nous une grande réussite. Il est le fruit d'un travail achar
 > il faut avancer pour ne pas perdre l’équilibre.”
 > A.Einstein
 
-Nous souaitons remercier l'ensemble du personnel enseignant pour nous 
+Nous souhaitons remercier l'ensemble du personnel enseignant pour nous 
 avoir aider dans ce projet.
 Nous remercions aussi Antoine M. pour nous avoir fait un logo à notre effigie.
 *********************
